@@ -1,0 +1,265 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+	padding: 0;
+}
+
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.grid-row {
+}
+
+.grid-col-1of5 {
+	width: 25%;
+	height: 100vh;
+	position: absolute;
+	float: left;
+	text-align: center;
+	z-index: 10;
+}
+
+.nav-about-text {
+	width: 20%;
+	height: 100vh;
+	position: absolute;
+	text-align: left;
+	left: 17vw;
+	z-index: 9;
+}
+
+.grid-col-2of5 {
+	width: 40%;
+	height: 100vh;
+	position: absolute;
+	text-align: left;
+	left: 33vw;
+	z-index: 10;
+}
+
+/* ----- = 70em ----- */
+
+@media (max-width: 70em) {
+
+	.fullscreen .bg-me {
+		overflow: visible;
+		width: auto;
+		height: 100vh;
+	}
+
+}
+
+/* ----- = 50em ----- */
+
+@media (max-width: 50em) {
+	
+	/* ----- Portfolio section ----- */
+
+	#portfolio, .section {
+		height: 92vh;
+		padding-top: 10vh;
+	}
+
+	.section img, .section h4 span, .section-text {
+		width: 70vw;
+	}
+
+	.section h4 span {
+		height: 45.5vw;
+	}
+
+	h4 > span.align-left {
+		padding-top: 5.8rem;
+		padding-left: 8rem;
+	}
+	
+	h4 > span.align-right {
+		padding-top: 5.8rem;
+		padding-right: 8rem;
+	}
+
+	.section-text {
+		margin-top: 13rem;
+	}
+
+	.section p {
+		clear: both;
+	}
+
+	.align-left, .align-right {
+		left: 15vw;
+	}
+	
+}
+
+/* ----- = 50em ----- */
+
+@media (min-width: 50em) {
+	
+	.detail img {
+		margin-top: -6rem;
+	}
+	
+}
+
+/* ----- Mobile = 26.75em ----- */
+
+@media (max-width: 26.75em) {
+
+	/* ----- Nav Bars ----- */
+
+	.nav-toggle a, .nav-fade-toggle a {
+		margin-right: 2.2rem;
+	}
+
+	/* ----- Nav buttons ----- */
+
+	#logo-index, #scroll-logo-index {
+		margin-left: 2rem;
+	}
+
+	.nav-bottom-bg {
+		text-align: center;
+		height: 12.5rem;
+	}
+
+	.nav-bottom h3 {
+		position: absolute;
+		top: -0.8rem;
+	}
+
+	.nav-external {
+		text-align: center;
+	}
+
+	.nav-external a {
+		margin: 1.4rem 0;
+		margin-bottom: 0;
+		float: none;
+	}
+
+	/* ----- Welcome to my site ----- */
+
+	.index h1 {
+		height: 5.6rem;
+		font-size: 4rem;
+	}
+
+	.index-text h2 {
+		width: 80vw;
+		font-size: 1.3rem;
+		margin-left: 10vw;
+		padding-top: 3.2rem;
+	}
+
+	/* ----- About section ----- */
+
+	#index-about h2 {
+		margin-top: -8rem;
+		font-size: 1.35rem;
+	}
+
+	.about-ui, .about-and, .about-ux {
+		margin-top: 8rem;
+		height: 13vh;
+	}
+
+	.about-and {
+		height: 6vh;
+		vertical-align: middle;
+		margin-bottom: 12.5rem;
+		margin-right: 2.8rem;
+	}
+
+	/* ----- Portfolio section ----- */
+
+	#portfolio, .section {
+		height: 72vh;
+		padding-top: 10vh;
+	}
+
+	.section img, .section h4 span, .section-text {
+		width: 84vw;
+	}
+
+	.section h4 span {
+		height: 54.5vw;
+	}
+
+	h4 > span.align-left, h4 > span.align-right {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.section-text {
+		margin-top: 4.2rem;
+	}
+
+	.section p {
+		clear: both;
+	}
+
+	.align-left, .align-right {
+		left: 8vw;
+	}
+
+	/* ----- Resume page ----- */
+
+	.resume {
+	}
+
+	.nav-expand {
+		margin-top: 8.5rem;
+	}
+
+	/* ----- Portfolio Detailed Pages ----- */
+
+	.detail-fill h1 {
+		font-size: 4rem;
+		margin-top: -3rem;
+	}
+
+	.section-detail h1 {
+		font-size: 3rem;
+	}
+
+	.detail h2 {
+		padding: 0 3rem;
+		font-size: 1.2rem;
+	}
+
+	div.detail-fill > h2:first-of-type {
+		margin-top: -2rem;
+	}
+	
+	.detail, .detail-fill {
+		height: 42.4vh;
+	}
+
+	.detail img {
+		margin-top: 0rem;
+	}
+	
+	.section-detail {
+		margin-top: 5vh;
+		padding: 0 8vw;
+	}
+	
+	.nav-components {
+		line-height: 2.5rem;
+	}
+	
+	.detail-image {
+		margin: 1.5rem 1rem;
+	}
+	
+	.detail-image-half {
+		width: 95%;
+	}
+
+}
