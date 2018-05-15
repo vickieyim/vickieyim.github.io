@@ -40,14 +40,12 @@ p {
 /* ----- Headings ----- */
 
 h1 {
-	color: #fff;
 	text-align: center;
 	font-weight: 400;
 	font-size: 5rem;
 }
 
 h2 {
-	color: #fff;
 	font-weight: 300;
 	text-align: center;
 }
@@ -58,7 +56,6 @@ h3 {
 }
 
 h4 {
-	color: #fff;
 	font-weight: 400;
 	font-size: 2rem;
 }
@@ -75,6 +72,7 @@ h5 {
 	background-color: #fff;
 	width: 100%;
 	height: 4rem;
+	font-family: Lato, DINPro, Helvitica, Arial, sans-serif;
 	top: 0;
 	padding: 0.5rem 0;
 	/*
@@ -110,9 +108,9 @@ h5 {
 	display: inline-block;
 	margin-right: 5rem;
 	font-size: 1.2rem;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: 0.1rem;
-	color: #2acfcc;
+	color: #000;
 	-webkit-transition: -webkit-transform 0.3s ease-out;
 	-moz-transition: -moz-transform 0.3s ease-out;
 	-ms-transition: -ms-transform 0.3s ease-out;
@@ -145,7 +143,7 @@ h5 {
 /* ----- Nav buttons ----- */
 
 #nav-logo {
-	opacity: 0.7;
+	opacity: 0.6;
 	margin-top: 0.45rem;
 	margin-left: 2.5rem;
 }
@@ -165,8 +163,9 @@ h5 {
 	margin-top: 3vh;
 	margin-left: 5vw;
 	padding: 0;
-	color: #2acfcc;
-	font-weight: 400;
+	color: #000;
+	font-family: Lato, DINPro, Helvitica, Arial, sans-serif;
+	font-weight: 500;
 	font-size: 1.1rem;
 	letter-spacing: 0.05rem;
 }
@@ -177,6 +176,7 @@ h5 {
 	background-color: #fff;
 	width: 100vw;
 	height: 10vh;
+	font-family: Lato, DINPro, Helvitica, Arial, sans-serif;
 	bottom: 0;
 	margin-top: 2rem;
 }
@@ -197,9 +197,9 @@ h5 {
 	margin-top: 3vh;
 	margin-left: 5vw;
 	font-size: 1.1rem;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: 0.05rem;
-	color: #2acfcc;
+	color: #000;
 	-webkit-transition: -webkit-transform 0.3s ease-out;
 	-moz-transition: -moz-transform 0.3s ease-out;
 	-ms-transition: -ms-transform 0.3s ease-out;
@@ -241,7 +241,7 @@ h5 {
 
 /* ----- Content containers ----- */
 
-.hello {
+.welcome {
 	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
@@ -258,27 +258,22 @@ h5 {
 	padding: 0;
 }
 
-.wrapper {
-	width: 100%;
-	float: left;
-}
-
 .pad {
 	padding: 0 15vw;
 }
 
 /* ----- Welcome to my site ----- */
 
-.hello h1 {
-	color: #fff;
+.welcome h1 {
 	text-align: center;
+	color: #fff;
 	font-weight: 400;
 	font-size: 5rem;
 	margin-top: 38vh;
 	margin-bottom: 0;
 }
 
-.hello-text h2 {
+.welcome-text h2 {
 	width: 100vw;
 	text-align: center;
 	color: #fff;
@@ -360,41 +355,47 @@ h5 {
 	z-index: 0;
 }
 
-/* ----- About section ----- */
-
-.about-intro {
-	color: #7bd8da;
-}
-
-#about-page.section-detail {
-	text-align: center;
-}
+/* ----- About page ----- */
 
 .about-me {
-	width: 84vw;
-	margin: 0 8vw;
+	margin-top: 4rem;
+	padding-top: 1rem;
 }
 
-#about-page img {
-	height: 60vh;
-	margin: 3rem 0;
-}
-
-#about-page.section-detail h3 {
-	color: #7bd8da;
-	border-bottom-color: #7bd8da;
-}
-
-#about-page .about-icons {
-	max-height: 20vh;
+.about-me .centred {
 	text-align: center;
-	margin: 1.5rem 0 -1rem 0;
+}
+
+.about-me .img-top {
+	width: 50vw;
+	margin-top: 5rem;
 }
 
 .about-me p {
 	text-align: left;
-	margin: 1.5rem 0;
-	padding: 0 4rem;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	margin: 3rem 0;
+}
+
+.contact-me p {
+	margin-bottom: 1.75rem;
+}
+
+.contact-me a {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+	color: #2acfcc;
+	border: solid 0.1rem #2acfcc;
+	margin: 0 1rem 1rem 0;
+	padding: 1rem 1.8rem;
+}
+
+.contact-me a:hover {
+	background-color: #2acfcc;
+	color: #fff;
 }
 
 /* ----- Resume page ----- */
@@ -538,4 +539,8 @@ iframe {
 
 .project-final .img-bottom {
 	margin-bottom: 0;
+}
+
+.end {
+	margin-bottom: 4rem;
 }

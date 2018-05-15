@@ -50,33 +50,4 @@ $(document).ready(function() {
 		}
 	});
 	
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > (window.height = 200)) {
-			$('.detail-animate').animate({left: '-23%'}, 1500);
-			$('.content-animate')
-				.css('visibility', 'visible')
-				.animate({opacity: 1, left: '19%'}, 1500);
-		}
-	});
-	
-	/*
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > (window.height = 1000)) {
-			$('.detail-right').animate({left: '+23%'}, 1500);
-			$('.content-left')
-				.css('visibility', 'visible')
-				.animate({opacity: 1, left: '-19%'}, 1500);
-		}
-	});
-	*/
-	
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > (window.height = 400)) {
-			$('.about-img').animate({left: '-23%'}, 1500);
-			$('.about-content')
-				.css('visibility', 'visible')
-				.animate({opacity: 1, left: '22%'}, 1500);
-		}
-	});
-	
 })
