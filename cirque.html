@@ -8,122 +8,118 @@
 
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/grid.css">
-		<link rel="shortcut icon" href="img/favicon.png"/>
+		<link rel="shortcut icon" href="img/favicon.png">
 	</head>
 
 	<body id="cirque">
 		
-		<!-- Navigation bar -->
-		
-		<header id="detail-top" class="nav">
-			<a href="index.html"><img id="nav-logo" src="img/logo_black.png" onmouseover="this.src='img/logo_turquoise.png'" onmouseout="this.src='img/logo_black.png'" alt="logo" height="35"></a>
-			<nav class="grid-row nav-toggle">
-				<div><a id="nav-about" href="about.html">about</a></div>
-				<div><a id="nav-portfolio" href="index.html#portfolio">portfolio</a></div>
-				<div><a id="nav-resume" href="resume.html">resume</a></div>
-			</nav>
+		<header>
+			<div id="navbar" class="nav">
+				<a href="javascript:void(0)" class="close-nav" onclick="closeNav()">&times;</a>
+				<a href="index.html">HOME</a>
+				<a class="current">CIRQUE</a>
+				<a href="nps.html">NPS</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+
+			<button class="open-nav" onclick="openNav()">&#9776;</button>
 		</header>
 		
-		<div class="project-info pad">
-			<h1>Storybooks by Cirque du Soleil</h1>
-			<h2>An Interactive Digital Storybook App</h2>
-			<p>Storybooks, by Cirque du Soleil, is an application that extends the Cirque du Soleil experience beyond the show, whilst providing Cirque du Soleil an opportunity to further connect audiences with their brand values.</p>
-			<p>This project is based on Cirque du Soleil's 2017 touring show, Kurious: Cabinet of Curiosities. The plot of the show was adapted into a narrative where the reader opens and explores the cabinet of curiosities.</p>
-			<p class="project-team"><b>Team:</b> Kristy Leung, Nikki An, Brandon Lal, Mark Strathern<br>
-			<b>Roles:</b> User research, User Testing, Image Treatment, Videography<br>
-			<b>Type:</b> Academic Case Study</p>
-			
-			<div class="back-to-top">
-				<a href="#detail-top"><img class="up-arrow-detail" src="img/up_arrow.png" alt="up arrow"></a>
-			</div>		
+		<div class="banner">
+			<img class="card" src="img/cirque_banner.png" alt="Storybooks by Cirque du Soleil">
 		</div>
 		
-		<div class="project-content pad">
-			<iframe width="1280" hight="720" src="https://player.vimeo.com/video/242158150" alt="https://vimeo.com/242158150" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+		<div>
+			<p>Storybooks, by Cirque du Soleil, is an interactive digital storybook application that extends the Cirque du Soleil experience beyond the show, whilst providing Cirque du Soleil an opportunity to further connect audiences with their brand values.</p>
+			<p>This project is based on Cirque du Soleil's 2017 touring show, Kurious: Cabinet of Curiosities. The plot of the show was adapted into a narrative where the reader opens and explores the cabinet of curiosities.</p>	
+		</div>
+		
+		<div class="content">
+			<iframe src="https://player.vimeo.com/video/242158150" alt="https://vimeo.com/242158150" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 			</iframe>
 			
-			<h3>Business Problem</h3>
+			<h2>BUSINESS PROBLEM</h2>
+			
+			<h3>Insights</h3>
 			<p>Cirque du Soleil has been the leading innovator of live performance art as a nouveau circus for over 30 years, and has performed for 180 million people worldwide. However, with so many people having seen at least one show, Cirque has had difficulty driving repeat attendance, dropping 36.6% in tour revenue.</p>
-			<div class="centred">
-				<img class="img-bottom" src="img/cirque_buspr.png" alt="Business Problem">
+			<div class="mini-margin">
+				<p class="quote">"The market for Cirque is maturing. An estimated 180 million people have seen a performance. How do you leave them wanting more?"</p>
+				<p class="quote-source">James Quigley, CEO Emeritus, Deloitte</p>
+				<p class="quote">"Cirque du Soleil, the operator of avant-garde circus events, has reported that revenues of its European tours fell by 36.6%... It's single biggest source of revenue was ticket sales which fell by 39%."</p>
+				<p class="quote-source">Christian Sylt, The Telegraph</p>
 			</div>
 			
-			<h3>Research</h3>
-			<h4>Brand</h4>
-			<p>Cirque du Soleil's mission is "to invoke the imagination, provoke the senses, and evoke the emotions" of their audiences, something that helps them stand out against their competitors. After comprehensive research of their values, we stumbled upon their recruitment process and learned that Cirque encourages their performers to live out their dreams on stage. What we abstracted from this was a new value of "creating dreams", in which we focused our concept and product on.</p>
-			<div class="centred">
-				<img class="img-middle" src="img/cirque_values.png" alt="Brand Values">
-			</div>
+			<h3>Brand Research</h3>
+			<p>Cirque du Soleil's mission is "to invoke the imagination, provoke the senses, and evoke the emotions" of their audiences, something that helps them stand out against competitors. After comprehensive research of their values, we stumbled upon their recruitment process and learned that Cirque encourages their performers to live out their dreams on stage. What we abstracted from this was a new value of "creating dreams", in which we focused our concept and product on.</p>
 			<p>We focused on the value of "creating dreams" because we saw that as Cirque's driving force for the development and production of their shows. We also saw creating dreams going hand-in-hand with extending the Cirque experience to strengthen their relationship with customers.</p>
-			<h4>User Research</h4>
-			<p>We spoke to people who had been to Cirque shows, and ones who had not, to see their perspectives on the brand and the experience as a whole. The people who had seen at least one show, said the even is made into an occasion, and they would not go to shows year after year, but rather once every few years, because it was expensive. (One person said that for good seats, and for their whole family to attend, it would cost up to $1000.) There were people who enjoyed the acrobatics and performances as a spectacle, while other who were more invested in the story aspect found the show much more emotional. However, the story of each Cirque show is not formally revealed, so it is up to the individual themselves to figure it out. But one thing we found in common throughout all our interviews was the level of respect people have for the company. How could we leverage that into something that would drive higher return rates?</p>
 			
-			<h3>Proposal</h3>
-			<p>Although digital platforms cannot replicate the thrill of live-show experiences and past in-show interventions have proven to be distracting, even taking away from the experience, <sec class="highlight">digital can offer opportunities for deep storytelling and a dissection of live-show content.</sec></p>
-			<h4>Audience</h4>
-			<p>Cirque's audience is mostly comprised of adults, and sometimes families, but we chose to specifically target families. While adults enjoyed the traditional circus, children are attracted to the nouveau circus. We think the story is an important aspect of Cirque shows, and it could add so much depth to an experience. If we are able to bring out these stories, and create a lasting impression on children, it would foster a connection with the brand that carries into adulthood, as the new Cirque fans.</p>
-			<div class="centred">
-				<img class="img-middle" src="img/cirque_brandframework.png" alt="Brand Framework">
-			</div>
+			<h3>User Research</h3>
+			<p>We spoke to people who had been to Cirque shows, and ones who had not, to see their perspectives on the brand and the experience as a whole. The people who had seen at least one show said the event was made into an occasion, and they would only go to a show once every few years because it was expensive. Some enjoyed the acrobatics and performances as a spectacle, while other who were more invested in the story aspect found the show much more emotional. However, the story of each Cirque show is not formally revealed, so it is up to the individual themselves to figure it out. But one thing we found in common throughout all our interviews was the level of respect people have for the company. How could we leverage that into something that would drive higher return rates?</p>
+			
+			<h2>PROPOSAL</h2>
+			
+			<h3>The Pitch</h3>
+			<p>Although digital platforms cannot replicate the thrill of live shows and previous in-show interventions have proven to be distracting, even taking away from the experience, other means of digital intervention can offer opportunities for deep storytelling and a dissection of live-show content.</p>
+			
+			<h3>Audience</h3>
+			<p>Cirque's audience is mostly comprised of adults, and sometimes families, but we chose to design for families. While adults enjoyed the traditional circus, children are attracted to the nouveau circus. We think the story is an important aspect of Cirque shows, and it could add much depth to the experience. If we are able to bring out these stories, and create lasting impressions on children, it could foster a connection with the brand that carries into adulthood, as the new Cirque fans.</p>
 			<p>With this new brand framework, Cirque is one step closer to an ongoing connection with their audience, while strengthening offerings to a younger demographic. And for the customer, this would give parents more bonding time with their children, such as reading and learning together.</p>
-			<h4>Area of Intervention</h4>
-			<p>Cirque had previously collaborated with a design firm to create an app that was to be used during the show. However, we recognized that the most fascinating part about the Cirque experience is the wonder of the performance. This should be highlighted, not taken attention away from. So we chose our intervention point after the show, with an app to help customers relive their experience from their magical experience.</p>
-			<div class="centred">
-				<img class="img-middle" src="img/cirque_brandloyalty.png" alt="Brand Loyalty">
-			</div>
-			<h4>Concept</h4>
-			<p>Through our Sprint process, we took three strands of insights, <sec class="highlight">leverage the brand, more than a spectacle, and external inspiration</sec>, and developed them into ideas that would drive our concept. These ideas stayed true to the values or Cirque, while allowing us to pursue new avenues in digital offerings.</p>
-			<div class="centred">
-				<img class="img-bottom" src="img/cirque_conceptdev.png" alt="Concept Development">
-			</div>
+			<img src="img/cirque_brandframework.png" alt="Brand Framework">
+			
+			<h3>Area of Intervention</h3>
+			<p>Cirque had previously collaborated with a design firm to create an app to be used during the show. However, we recognized that the most fascinating part about the Cirque experience is the wonder of the performance. This should be highlighted, not taken away from. We chose our intervention point after the show, with an app to help customers relive their experience from their magical experience.</p>
+			<img src="img/cirque_brandloyalty.png" alt="Brand Loyalty">
+			
+			<h3>Concept</h3>
+			<p>Through our Sprint process, we took three strands of insights: (1) leverage the brand, (2) more than a spectacle, and (3) external inspiration, and developed them into ideas that would drive our concept. These ideas stayed true to the values or Cirque, while allowing us to pursue new avenues in digital offerings.</p>
+			<img src="img/cirque_conceptdev.png" alt="Concept Development">
 			
 			<h3>Persona</h3>
 			<p>Our target persona, as we call "believers", are parents with young children who are looking for memorable experiences to enjoy together. On special occasions, they are willing to spend a little more, but they want to make sure the whole family finds the experience worthwhile.</p>
-			<div class="centred">
-				<img class="img-bottom" src="img/cirque_persona.png" alt="Persona">
-			</div>
+			<img src="img/cirque_persona.png" alt="Persona">
 			
 			<h3>Journey Framework</h3>
 			<p>The second iteration of our journey framework (with the first helping us decide where our area of intervention was) helped us see when the audience would most likely first encounter our product. The lows of the post-show gave us an idea of where we could help extend the Cirque experience. Specifically, we looked into after the family went home and the day after, to advertise the app.</p>
-			<div class="centred">
-				<img class="img-bottom" src="img/cirque_journeyframework.png" alt="Journey Framework">
-			</div>
+			<img  src="img/cirque_journeyframework.png" alt="Journey Framework">
 		</div>
 		
-		<div class="project-final pad">
-			<h3>The Product</h3>
-			<div class="centred">
-				<img class="img-middle" src="img/inscription.gif" alt="Inscription GIF">
-				<img class="img-middle" src="img/smoke.gif" alt="Blow Smoke GIF">
-				<img class="img-middle" src="img/360_vid.gif" alt="360 Degree Video GIF">
-				<img class="img-middle" src="img/rola_bola.gif" alt="Rola Bola GIF">
-				<img class="img-middle" src="img/character.gif" alt="Character Card GIF">
-				<img class="img-middle" src="img/reading.gif" alt="Reading & Learning GIF">
-			</div>
-			<h4>Longevity Plan</h4>
-			<div class="centred">
-				<img class="img-top" src="img/cirque_longevity.png" alt="Longevity Plan">
-			</div>
-			<p class="end">We believe this can be expanded to include all of their shows, allowing families to read storybooks of their favourite Cirque du Soleil performances, to extend the brand experience. With the magnificent range of shows developed by Cirque du Soleil, this app can reach so many people, allowing them to relive their experience and encouring them to create their own dreams.</p>
+		<div class="project">
+			<h2>THE PROJECT</h2>
+			
+			<!-- Inscription -->
+			<iframe src="https://player.vimeo.com/video/296250495" alt="https://vimeo.com/296250495" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p><strong>Inscription:</strong> An idea we adapted from physical storybooks, this creates a personal keepsake for children, as well a more engaging experience by integrating their name into the book. Storybooks follows a linear narrative, but a table of contents system was created to allow children to jump back to their favourite parts at any time, while new content is unlocked as the story progresses.</p>
+			
+			<!-- Smoke Interaction -->
+			<iframe src="https://player.vimeo.com/video/296250755" alt="https://vimeo.com/296250755" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p><strong>Smoke Interaction:</strong> This scene is an important point in the story as it is the result of opening the Cabinet for Curiosities. Mimicking the show, this grand scene gives the reader a sense of all the characters, before delving into the story. This is an example of a moment of the show that is highlighted in the story.</p>
+			
+			<!-- 360 Video -->
+			<iframe src="https://player.vimeo.com/video/296250820" alt="https://vimeo.com/296250820" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p><strong>360&#176; Video:</strong> A 360&#176; immersive experience not only allows children to get up close with their favourite characters, but allows them to relive their Cirque du Soleil experience by putting them in the centre of the sounds and surroundings.</p>
+			
+			<!-- Rola Bola -->
+			<iframe src="https://player.vimeo.com/video/296250831" alt="https://vimeo.com/296250831" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p><strong>Rola Bola:</strong> This app is more than simply for playing video and audio. By going deeper into the story and adapting the most climactic moments of the show into actual interactive activities, children can relive the magic and wonder of Cirque.</p>
+			
+			<!-- Characters -->
+			<iframe src="https://player.vimeo.com/video/296250837" alt="https://vimeo.com/296250837" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p><strong>Characters:</strong> We want children to be able to naturally discover character information as they move through the story, to help them create a deeper connection with the characters. Integrating character information into the storybook can give readers context on performers they've seen during the show, or can give context for people who are reading the book before going to a show.</p>
+			
+			<!-- Reading -->
+			<iframe src="https://player.vimeo.com/video/296250844" alt="https://vimeo.com/296250844" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p><strong>Read Along:</strong> It was important for us to include learning aspects into the storybook to support growing reading skills. This enforces the value for children, which in turn, provides value to parents. The written content is at a 6 to 8-year-old reading level; for children who can read on their own. Yet it's at a level where parents can read to younger children, while the child can interact with the media content. We adapted read-aloud from Leapfrog, as well as dictionaries to help with new vocabulary.</p>
 		</div>
-		
-		<!-- Footer, external links -->
-		
-		<!-- <footer class="nav-footer">
-			<nav class="nav-bottom">
-				<h5>- vy</h5>
-				<nav class="grid-row nav-external hidden">
-					<div class="nav-more"><a href="http://www.instagram.com/vkym" target="_top">instagram</a></div>
-					<div class="nav-more"><a href="http://www.linkedin.com/in/vickieyim" target="_top">linkedin</a></div>
-					<div class="nav-more"><a href="mailto:vcke.ym@gmail.com">e-mail</a></div>
-				</nav>
-			</nav>
-		</footer> -->
+			
+		<div class="content">
+			<h3>Longevity Plan</h3>
+			<p>We believe this can be expanded to include all of their shows, allowing families to read storybooks of their favourite Cirque du Soleil performances, to extend the brand experience. With the magnificent range of shows developed by Cirque du Soleil, this app can reach so many people, allowing them to relive their experience and encouring them to create their own dreams.</p>
+			<img class="end" src="img/cirque_longevity.png" alt="Longevity Plan">
+		</div>
 		
 		<!-- HTML5shiv allows IE below version 9 to work with HTML5 elements. Note the conditionals before and after that do not load this script if browser is greater-than or equal-to IE9. -->
 		<!-- [if lt IE 9]><script src="js/html5shiv.js"></script><![endif] -->
 		<script src="js/jquery-1.7.1.min.js"></script>
-		<script src="js/scroll.js"></script>
 		<script src="js/animate.js"></script>
 		
 	</body>

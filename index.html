@@ -6,81 +6,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Vickie Yim</title>
 
-		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/grid.css">
-		<link rel="shortcut icon" href="img/favicon.png"/>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="img/favicon.png">
 	</head>
 
-	<body>
+	<body id="home">
 
-		<!-- Nav at the top of the page -->
-		
-		<header class="nav main">
-			<a href="index.html"><img id="nav-logo" src="img/logo_black.png" onmouseover="this.src='img/logo_turquoise.png'" onmouseout="this.src='img/logo_black.png'" alt="logo" height="35"></a>
-			<nav class="grid-row nav-toggle">
-				<div><a id="nav-about" href="about.html">about</a></div>
-				<div><a id="nav-portfolio" href="#portfolio">portfolio</a></div>
-				<div><a id="nav-resume" href="resume.html">resume</a></div>
-			</nav>
-		</header>
-		
-		<!-- Welcome to my site -->
+		<div id="welcome">
+			<h1>hello</h1>
+			<h1>vy.</h1>
+			<p>Hello, my name is Vickie Yim. I am a user experience and visual designer residing in Vancouver, Canada.</p>
+			<p>I am currently looking for a UX design internship or graphic design role in an in-house team. In my spare time, I enjoy trying out new UI and micro interaction techniques.</p>
+		</div>
 
-		<div class="welcome">
-			<h1>vickie yim</h1>
-			<div class="welcome-text">
-				<h2>user experience + visual designer</h2>
-			</div>
-			<!-- Click down-arrow, smooth scroll -->
-			<div class="see-more">
-				<a href="#portfolio"><img class="down-arrow" src="img/down_arrow.png" alt="down arrow"></a>
-				<!-- Click up-arrow, smooth scroll -->
-				<!-- <div class="back-to-top">
-					<a href="#index-about"><img class="up-arrow" src="img/up_arrow.png" alt="up arrow"></a>
-				</div> -->
-			</div>
+		<div id="portfolio">
+			<a href="cirque.html"><img class="card" src="img/main_cirque.png" alt="Cirque du Soleil">
+			</a>
+			<a href="nps.html"><img class="card" src="img/main_nps.png" alt="National Park Service">
+			</a>
 		</div>
 		
-		<!-- Portfolio section -->
-
-		<div id="portfolio" class="section-portfolio">
-			
-			<a id="cirque-link" href="cirque.html">
-				<div class="container">
-					<img class="portfolio-logo" src="img/cirque_logo.png" alt="Cirque du Soleil">
-					<img class="portfolio-demo" src="img/cirque_rolabola.png">
-				</div>
-			</a>
-			
-			<a id="nps-link" href="nps.html">
-				<div class="container">
-					<img class="portfolio-logo" src="img/nps_logo.png" alt="National Park Service">
-					<img class="portfolio-demo" src="img/nps_sunset.png">
-				</div>
-			</a>
-			
+		<div id="home-etc">
+			<a class="card" href="about.html">About</a>
+			<a class="card" href="img/resume.pdf" target="_blank">Resume</a>
 		</div>
-		
-		<!-- End main content -->
-		
-		<!-- Footer, external links -->
-		
-		<!-- <footer class="nav-footer">
-			<nav class="nav-bottom home">
-				<div class="nav-bottom-bg"></div>
-				<h5>- vy</h5>
-				<nav class="grid-row nav-external hidden">
-					<div class="nav-more"><a href="http://www.instagram.com/vkym" target="_top">instagram</a></div>
-					<div class="nav-more"><a href="http://www.linkedin.com/in/vickieyim" target="_top">linkedin</a></div>
-					<div class="nav-more"><a href="mailto:vcke.ym@gmail.com">e-mail</a></div>
-				</nav>
-			</nav>
-		</footer> -->
 
 		<!-- HTML5shiv allows IE below version 9 to work with HTML5 elements. Note the conditionals before and after that do not load this script if browser is greater-than or equal-to IE9. -->
 		<!-- [if lt IE 9]><script src="js/html5shiv.js"></script><![endif] -->
 		<script src="js/jquery-1.7.1.min.js"></script>
-		<script src="js/scroll.js"></script>
 		<script src="js/animate.js"></script>
 
 	</body>
