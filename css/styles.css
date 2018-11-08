@@ -4,26 +4,30 @@ html {
 	font-family: Circular STD, Gotham HTF, Lato, DINPro, Helvitica, Arial, sans-serif;
 	font-size: 1.05rem;
 	font-weight: 300;
-	min-height: 100%;
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
 }
 
 #cirque {
-	background-color: rgba(51, 150, 150, 0.05);
+	background-color: #f4fbfb;
 }
 
 #nps {
-	background-color: rgba(76, 124, 21, 0.05);
+	background-color: #f8fdf2;
 }
 
 body {
-	margin: 0 15vw;
+	margin: 0 20vw;
 	color: #444;
+	transition: 0.5s;
 }
 
 p {
 	font-size: 1.1rem;
 	line-height: 1.8rem;
-	margin: 4vh 5vw;
+	margin: 4vh 0;
 }
 
 a {
@@ -48,7 +52,7 @@ h2 {
 	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 2rem;
-	margin: 4vh 5vw;
+	margin: 4vh 0;
 	margin-top: 4rem;
 }
 
@@ -56,17 +60,17 @@ h3 {
 	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
 	font-weight: 500;
 	font-size: 1.3rem;
-	margin: 4vh 5vw;
+	margin: 4vh 0;
 }
 
 /* ---------------------------- Nav bar ---------------------------- */
 
-#cirque .nav, #cirque .open-nav {
-	background-color: rgba(51, 150, 150, 0.01);
+#cirque .nav {
+	background-color: #f4fbfb;
 }
 
-#nps .nav, #nps .open-nav {
-	background-color: rgba(76, 124, 21, 0.01);
+#nps .nav {
+	background-color: #f8fdf2;
 }
 
 .nav {
@@ -86,7 +90,7 @@ h3 {
 	font-family: Gotham HTF, Lato;
 	display: inline-block;
 	font-size: 1rem;
-	font-weight: 450;
+	font-weight: 500;
 	text-decoration: none;
 	color: #b3b3b3;
 	margin: 0.2rem 2rem;
@@ -103,10 +107,10 @@ h3 {
 	position: absolute;
 	font-size: 45px;
 	font-weight: 400;
-	top: 1.2vh;
-	left: 2.8vw;
+	top: 0;
+	left: 0;
+	margin: 0.7rem 2rem;
 	color: #b3b3b3;
-	margin: 0;
 	padding: 0;
 }
 
@@ -114,8 +118,10 @@ h3 {
 	position: fixed;
 	font-size: 30px;
 	cursor: pointer;
-	top: 2vh;
-	left: 2vw;
+	top: 0;
+	left: 0;
+	margin: 1rem 1.6rem;
+	background-color: transparent;
 	color: #b3b3b3;
 	border: none;
 }
@@ -124,18 +130,27 @@ h3 {
 	color: #444;
 }
 
+.overlay {
+	visibility: hidden;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* ---------------------- Content containers ---------------------- */
 
 #welcome {
-	overflow: hidden;
 	height: calc(100vh - 4rem);
 	margin: 2rem;
-	border-radius: 15px;
+	border-radius: 10px;
 	background: #444;
 }
 
 .card {
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 /* ----------------------------- Home ----------------------------- */
@@ -148,34 +163,46 @@ body#home {
 	font-family: Circular STD;
 	font-size: 5rem;
 	position: absolute;
-	margin-top: 3rem;
-	margin-left: 4rem;
+	margin-top: 2.2rem;
+	margin-left: 3.5rem;
 	color: #fff;
 }
 
 #welcome h1:nth-of-type(2) {
 	text-align: right;
 	right: 0;
-	margin-top: 68vh;
+	bottom: 0;
+	margin-bottom: 5rem;
 	margin-right: 5rem;
 }
 
-#welcome p {
-	position: static;
-	margin: 5vh 25vw;
-	color: #fff;
+.vert-centre {
+	height: 100%;
+	display: table;
+	margin: 0 25vw;
 }
 
-#welcome p:nth-of-type(1) {
-	margin-top: 22vw;
+#welcome p {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
 }
 
 #portfolio .card, #home-etc .card {
 	display: inline-block;
 	width: calc(50vw - 3.2rem);
-	border-radius: 15px;
+	vertical-align: bottom;
 	margin-left: 2rem;
 	margin-bottom: 2rem;
+}
+
+#portfolio img {
+	visibility: visible;
+}
+
+#portfolio a {
+	visibility: hidden;
 }
 
 #home-etc .card {
@@ -196,16 +223,12 @@ body#home {
 	color: #2acfcc;
 }
 
-.contact {
-	margin: 2rem 5vw;
-}
-
 .contact a {
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
 	border: dashed 0.1rem #b3b3b3;
-	border-radius: 15px;
+	border-radius: 10px;
 	width: 29vw;
 	color: #444;
 	margin-right: 0.5vw;
@@ -227,43 +250,51 @@ body#home {
 	color: #4c7c15;
 }
 
+.banner-main {
+	display: block;
+}
+
+.banner-phone {
+	display: none;
+}
+
 #cirque .banner img, #nps .banner img {
 	width: 70vw;
-	margin-top: 3rem;
-	margin-bottom: 1rem;
+	margin: 3rem -5vw 1rem -5vw;
 }
 
 iframe {
 	width: 70vw;
 	height: 39.5vw;
 	border: none;
+	margin-left: -5vw;
 	margin-top: 1rem;
 }
 
 .content img, .project img {
 	width: 60vw;
-	margin: 1rem 5vw;
+	margin: 1rem 0;
 }
 
 .mini-margin .quote {
-	margin: 0 10vw;
+	margin: 0 5vw;
 }
 
 .mini-margin .quote-source {
 	font-size: 0.8rem;
 	font-style: italic;
-	margin: 0.3rem 10vw 1.8rem 10vw;
+	margin: 0.3rem 5vw 1.8rem 5vw;
 	color: #b3b3b3;
 }
 
-.mini-margin img {
+.content .mini-margin img {
 	width: 50vw;
-	margin: 1rem 10vw;
+	margin: 1rem 5vw;
 }
 
 .project iframe {
 	width: 60vw;
-	margin: 1rem 5vw;
+	margin: 1rem 0;
 }
 
 #cirque .project iframe {
@@ -275,6 +306,225 @@ iframe {
 }
 
 .project p {
-	margin-top: 1rem;
-	margin-bottom: 4rem;
+	margin-top: 0.5rem;
+	margin-bottom: 3rem;
+}
+
+/* ------------------------- Media Queries ------------------------- */
+
+/* --------------------- Wide Desktop = > 90em --------------------- */
+
+@media (min-width: 90em) {
+	
+}
+
+/* ------------------ Desktop Full Screen = 90em ------------------ */
+
+@media (max-width: 90em) {
+	
+}
+
+/* ------------------------ Desktop = 70em ------------------------ */
+
+@media (max-width: 70em) {
+	
+}
+
+/* ------------------------- Tablet = 50em ------------------------- */
+
+@media (max-width: 50em) {
+	
+	body {
+		margin: 0 10vw;
+	}
+	
+	p {
+		font-size: 0.9rem;
+	}
+	
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+	}
+	
+	.nav a {
+		font-size: 0.9rem;
+	}
+	
+	.overlay {
+		visibility: visible;
+	}
+	
+	#welcome {
+		height: calc(100vh - 2rem);
+		margin: 1rem;
+		background: #444;
+	}
+	
+	#welcome h1 {
+		font-weight: 400;
+		font-size: 3rem;
+	}
+	
+	#welcome h1:nth-of-type(2) {
+		margin-bottom: 4rem;
+		margin-right: 4rem;
+	}
+	
+	.contact a {
+		width: 39vw;
+	}
+	
+	#portfolio .card, #home-etc .card {
+		width: calc(50vw - 1.65rem);
+		margin-left: 1rem;
+		margin-bottom: 1rem;
+	}
+	
+	#cirque .banner img, #nps .banner img {
+		width: 90vw;
+		margin-top: 4.5rem;
+	}
+
+	iframe {
+		width: 90vw;
+		height: 50.7vw;
+		border: none;
+		margin-top: 1rem;
+	}
+	
+	.content .mini-margin img {
+		width: 70vw;
+	}
+
+	.content img, .project img {
+		width: 80vw;
+	}
+	
+	.project iframe {
+		width: 80vw;
+	}
+
+	#cirque .project iframe {
+		height: 56.6vw;
+	}
+	
+	#nps .project iframe {
+		height: 46vw;
+	}
+	
+}
+
+/* ---------------------- Small Tablet = 36em ---------------------- */
+
+@media (max-width: 36em) {
+	
+	body {
+		margin: 0 5vw;
+	}
+	
+	.open-nav {
+		background-color: #fff;
+	}
+	
+	#cirque .open-nav {
+		background-color: #f4fbfb;
+	}
+
+	#nps .open-nav {
+		background-color: #f8fdf2;
+	}
+	
+	#portfolio .card {
+		width: calc(100vw - 2rem);
+	}
+	
+	#home-etc .card {
+		font-size: 1rem;
+	}
+	
+	.contact a {
+		width: 43vw;
+	}
+	
+	.banner-main {
+		display: none;
+	}
+
+	.banner-phone {
+		display: block;
+	}
+	
+	#cirque .banner img, #nps .banner img {
+		width: 90vw;
+		margin: 4.5rem 0 1rem 0;
+	}
+
+	iframe {
+		width: 90vw;
+		margin-left: 0;
+	}
+	
+	.content img, .project img {
+		width: 90vw;
+	}
+	
+	.mini-margin .quote {
+		margin: 0;
+	}
+
+	.mini-margin .quote-source {
+		margin: 0.3rem 0 1.8rem 0;
+	}
+
+	.content .mini-margin img {
+		width: 90vw;
+		margin: 1rem 0;
+	}
+	
+	.project iframe {
+		width: 90vw;
+	}
+
+	#cirque .project iframe {
+		height: 63.6vw;
+	}
+	
+	#nps .project iframe {
+		height: 52vw;
+	}
+	
+}
+
+/* ----------------------- Mobile = 26.75em ----------------------- */
+
+@media (max-width: 26.75em) {
+	
+	p {
+		margin: 4vh 0;
+	}
+	
+	.nav a {
+		margin: 0.2rem 1.4rem;
+	}
+	
+	.nav a:nth-of-type(2) {
+		margin-top: -1rem;
+	}
+
+	.nav .close-nav {
+		margin: 0.3rem 1.4rem;
+	}
+
+	.open-nav {
+		margin: 0.6rem 1rem;
+	}
+	
+	.vert-centre {
+		margin: 0 17vw;
+	}
+	
 }
