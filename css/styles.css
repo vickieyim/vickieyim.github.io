@@ -87,7 +87,7 @@ h3 {
 }
 
 .nav a {
-	font-family: Gotham HTF, Lato;
+	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
 	display: inline-block;
 	font-size: 1rem;
 	font-weight: 500;
@@ -160,7 +160,7 @@ body#home {
 }
 
 #welcome h1 {
-	font-family: Circular STD;
+	font-family: Circular STD, Gotham HTF, Lato, DINPro, Helvitica, Arial, sans-serif;
 	font-size: 5rem;
 	position: absolute;
 	margin-top: 2.2rem;
