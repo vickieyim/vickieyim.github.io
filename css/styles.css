@@ -36,7 +36,15 @@ a {
 	text-decoration: none;
 }
 
-div img.end, div p.end, div a.end {
+a.link-decor {
+	border-bottom: solid 0.01rem #000;
+}
+
+a.link-decor:hover {
+	color: #2acfcc;
+}
+
+.end, div img.end, div p.end, div a.end {
 	margin-bottom: 3rem;
 }
 
@@ -310,38 +318,131 @@ iframe {
 	margin-bottom: 3rem;
 }
 
+/* --------------------- Slideshow / Carousel --------------------- */
+/* -- From https://www.w3schools.com/howto/howto_js_slideshow.asp -- */
+/*
+.slideshow-container {
+	height: 36.1vw;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	border: solid 0.01rem rgba(68, 68, 68, 0.2);
+	background-color: #f4fbfb;
+	margin-top: 2rem;
+}
+
+.slides {
+	display: none;
+}
+
+.slides img {
+	height: 36.1vw;
+	margin: 0;
+}
+
+.slides img:nth-of-type(2) {
+}
+
+.slides-prev, .slides-next {
+	cursor: pointer;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	top: 50%;
+	margin-top: -22px;
+	padding: 16px;
+	color: #444;
+	transition: 0.6s ease;
+}
+
+.slides-prev {
+	left: 0;
+}
+
+.slides-next {
+	right: 0;
+}
+
+.slides-prev:hover, .slides-next:hover {
+	background-color: rgba(255,255,255,0.9);
+}
+
+.slides-text {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #f2f2f2;
+	opacity: 0.5;
+	margin-bottom: 1rem;
+}
+
+.slides-dot {
+	cursor: pointer;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	margin: 0 0.3rem;
+	margin-top: 1.5rem;
+	background-color: #bbb;
+	transition: background-color 0.6s ease;
+}
+
+.slides-dot-active, .slides-dot:hover {
+	background-color: #444;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+*/
 /* ------------------------- Media Queries ------------------------- */
 
 /* --------------------- Wide Desktop = > 90em --------------------- */
 
 @media (min-width: 90em) {
-	
+
 }
 
 /* ------------------ Desktop Full Screen = 90em ------------------ */
 
 @media (max-width: 90em) {
-	
+
 }
 
 /* ------------------------ Desktop = 70em ------------------------ */
 
 @media (max-width: 70em) {
-	
+
 }
 
 /* ------------------------- Tablet = 50em ------------------------- */
 
 @media (max-width: 50em) {
-	
+
 	body {
 		margin: 0 10vw;
 	}
-	
+
 	p {
 		font-size: 0.9rem;
 	}
-	
+
 	h2 {
 		font-size: 1.8rem;
 	}
@@ -349,41 +450,41 @@ iframe {
 	h3 {
 		font-size: 1.1rem;
 	}
-	
+
 	.nav a {
 		font-size: 0.9rem;
 	}
-	
+
 	.overlay {
 		visibility: visible;
 	}
-	
+
 	#welcome {
 		height: calc(100vh - 2rem);
 		margin: 1rem;
 		background: #444;
 	}
-	
+
 	#welcome h1 {
 		font-weight: 400;
 		font-size: 3rem;
 	}
-	
+
 	#welcome h1:nth-of-type(2) {
 		margin-bottom: 4rem;
 		margin-right: 4rem;
 	}
-	
+
 	.contact a {
 		width: 39vw;
 	}
-	
+
 	#portfolio .card, #home-etc .card {
 		width: calc(50vw - 1.65rem);
 		margin-left: 1rem;
 		margin-bottom: 1rem;
 	}
-	
+
 	#cirque .banner img, #nps .banner img {
 		width: 90vw;
 		margin-top: 4.5rem;
@@ -395,7 +496,7 @@ iframe {
 		border: none;
 		margin-top: 1rem;
 	}
-	
+
 	.content .mini-margin img {
 		width: 70vw;
 	}
@@ -403,7 +504,7 @@ iframe {
 	.content img, .project img {
 		width: 80vw;
 	}
-	
+
 	.project iframe {
 		width: 80vw;
 	}
@@ -411,25 +512,25 @@ iframe {
 	#cirque .project iframe {
 		height: 56.6vw;
 	}
-	
+
 	#nps .project iframe {
 		height: 46vw;
 	}
-	
+
 }
 
 /* ---------------------- Small Tablet = 36em ---------------------- */
 
 @media (max-width: 36em) {
-	
+
 	body {
 		margin: 0 5vw;
 	}
-	
+
 	.open-nav {
 		background-color: #fff;
 	}
-	
+
 	#cirque .open-nav {
 		background-color: #f4fbfb;
 	}
@@ -437,19 +538,19 @@ iframe {
 	#nps .open-nav {
 		background-color: #f8fdf2;
 	}
-	
+
 	#portfolio .card {
 		width: calc(100vw - 2rem);
 	}
-	
+
 	#home-etc .card {
 		font-size: 1rem;
 	}
-	
+
 	.contact a {
 		width: 43vw;
 	}
-	
+
 	.banner-main {
 		display: none;
 	}
@@ -457,7 +558,7 @@ iframe {
 	.banner-phone {
 		display: block;
 	}
-	
+
 	#cirque .banner img, #nps .banner img {
 		width: 90vw;
 		margin: 4.5rem 0 1rem 0;
@@ -467,11 +568,11 @@ iframe {
 		width: 90vw;
 		margin-left: 0;
 	}
-	
+
 	.content img, .project img {
 		width: 90vw;
 	}
-	
+
 	.mini-margin .quote {
 		margin: 0;
 	}
@@ -484,7 +585,7 @@ iframe {
 		width: 90vw;
 		margin: 1rem 0;
 	}
-	
+
 	.project iframe {
 		width: 90vw;
 	}
@@ -492,25 +593,25 @@ iframe {
 	#cirque .project iframe {
 		height: 63.6vw;
 	}
-	
+
 	#nps .project iframe {
 		height: 52vw;
 	}
-	
+
 }
 
 /* ----------------------- Mobile = 26.75em ----------------------- */
 
 @media (max-width: 26.75em) {
-	
+
 	p {
 		margin: 4vh 0;
 	}
-	
+
 	.nav a {
 		margin: 0.2rem 1.4rem;
 	}
-	
+
 	.nav a:nth-of-type(2) {
 		margin-top: -1rem;
 	}
@@ -522,9 +623,9 @@ iframe {
 	.open-nav {
 		margin: 0.6rem 1rem;
 	}
-	
+
 	.vert-centre {
 		margin: 0 17vw;
 	}
-	
+
 }
