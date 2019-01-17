@@ -10,14 +10,6 @@ html {
 	box-sizing: border-box;
 }
 
-#cirque {
-	background-color: #f4fbfb;
-}
-
-#nps {
-	background-color: #f8fdf2;
-}
-
 body {
 	margin: 0 20vw;
 	color: #444;
@@ -279,7 +271,7 @@ iframe {
 	margin-top: 1rem;
 }
 
-.content img, .project img {
+.content img, .design img, .project img {
 	width: 60vw;
 	margin: 1rem 0;
 }
@@ -501,7 +493,7 @@ iframe {
 		width: 70vw;
 	}
 
-	.content img, .project img {
+	.content img, .design img, .project img {
 		width: 80vw;
 	}
 
@@ -569,7 +561,7 @@ iframe {
 		margin-left: 0;
 	}
 
-	.content img, .project img {
+	.content img, .design img, .project img {
 		width: 90vw;
 	}
 
