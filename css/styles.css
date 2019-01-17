@@ -515,14 +515,6 @@ iframe {
 		background-color: #fff;
 	}
 
-	#cirque .open-nav {
-		background-color: #f4fbfb;
-	}
-
-	#nps .open-nav {
-		background-color: #f8fdf2;
-	}
-
 	#portfolio .card {
 		width: calc(100vw - 2rem);
 	}
