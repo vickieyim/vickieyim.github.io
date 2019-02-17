@@ -11,236 +11,298 @@ html {
 }
 
 body {
-	margin: 0 20vw;
-	color: #444;
+	float: none;
+	width: 100vw;
+	margin: 0;
 	transition: 0.5s;
 }
 
 p {
 	font-size: 1.1rem;
-	line-height: 1.8rem;
-	margin: 4vh 0;
+	line-height: 2rem;
+	margin: 1.5rem 0;
+	color: #555;
 }
 
-a {
+blockquote {
+	font-family: FF Kievit Pro;
+	font-size: 1.2rem;
+	font-style: italic;
+	line-height: 2rem;
+	margin: 4rem 2.5rem 6rem 2.5rem;
+	color: #b3b3b3;
+}
+
+blockquote:nth-of-type(n+2) {
+	margin-top: -4rem;
+}
+
+.specifics p {
+	margin: 0;
+}
+
+a, a button {
 	color: inherit;
 	cursor: pointer;
 	text-decoration: none;
+	transition: all 0.25s;
 }
 
-a.link-decor {
-	border-bottom: solid 0.01rem #000;
+.container a {
+	border-bottom: solid 0.1rem #000;
 }
 
-a.link-decor:hover {
-	color: #2acfcc;
-}
-
-.end, div img.end, div p.end, div a.end {
-	margin-bottom: 3rem;
+.container a:hover {
+	border-bottom: solid 0.1rem #ccc;
+	color: #ccc;
 }
 
 /* --------------------------- Headings --------------------------- */
 
-h1 {
-	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
+#home h1 {
+	font-size: 2.5rem;
+	margin: 0;
+	margin-bottom: 2.5rem;
+}
+
+#me h1 {
+	margin: 0;
+	margin-bottom: 5vh;
+}
+
+#about h1 {
+	font-size: 1.5rem;
 	font-weight: 400;
+}
+
+.overview h1 {
 	font-size: 5rem;
+	font-weight: 600;
+	margin: 5rem 0 4rem 0;
+}
+
+.overview h2 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin: -3.5rem 0 4rem 0 ;
 }
 
 h2 {
-	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
+	font-family: Gotham HTF, Lato;
 	font-weight: 600;
-	font-size: 2rem;
-	margin: 4vh 0;
-	margin-top: 4rem;
+	font-size: 3.5rem;
+	margin: 1rem 0 6rem 0;
 }
 
 h3 {
-	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
+	font-family: Gotham HTF, Lato;
 	font-weight: 500;
-	font-size: 1.3rem;
-	margin: 4vh 0;
+	font-size: 1.4rem;
+	margin: 5rem 0 1rem 0;
 }
 
-/* ---------------------------- Nav bar ---------------------------- */
+h4 {
+	font-weight: 100;
+	font-size: 0.9rem;
+	color: #b3b3b3;
+	margin: 0;
+	margin-top: 12rem;
+}
 
-.nav {
-	position: fixed;
-	overflow-x: hidden;
+.specifics h4, .design h4 {
+	letter-spacing: 0.8px;
+}
+
+.specifics h4 {
+	margin: 0 0 1rem 0;
+}
+
+.design h4:not(:nth-of-type(1)) {
+	margin-top: 2rem;
+}
+
+/* --------------------------- Containers --------------------------- */
+
+.container {
+	margin: 0 20vw;
+}
+
+.container .end, .container .end.full-img {
+	margin-bottom: 10rem;
+}
+
+#home .container {
 	height: 100vh;
-	width: 0;
-	top: 0;
-	left: 0;
-	background-color: #fff;
-	transition: 0.5s;
-	padding-top: 10vh;
-	z-index: 1;
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0 20vw;
 }
 
-.nav a {
-	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
+#about .container {
+	margin: 20vh 20vw 15vh 20vw;
+}
+
+.col-2 {
 	display: inline-block;
-	font-size: 1rem;
-	font-weight: 500;
-	text-decoration: none;
-	color: #b3b3b3;
-	margin: 0.2rem 2rem;
-	padding: 0.4rem 0;
-	padding-right: 0.4rem;
-	transition: 0.3s;
 }
 
-.nav a:hover {
-	color: #444;
+.specifics {
+	float: left;
+	width: 30vw;
+	margin: 2rem 0 6rem 0;
 }
 
-.nav .close-nav {
-	position: absolute;
-	font-size: 45px;
-	font-weight: 400;
-	top: 0;
-	left: 0;
-	margin: 0.7rem 2rem;
-	color: #b3b3b3;
-	padding: 0;
+.specifics:nth-of-type(1) {
+	padding-right: 5vw;
 }
 
-.open-nav {
-	position: fixed;
-	font-size: 30px;
-	cursor: pointer;
-	top: 0;
-	left: 0;
-	margin: 1rem 1.6rem;
-	background-color: transparent;
-	color: #b3b3b3;
-	border: none;
+.specifics:nth-of-type(2) {
+	padding-left: 5vw;
 }
 
-.open-nav:hover {
-	color: #444;
+.media {
+	display: block;
+	margin: 0 -20vw;
 }
 
-.overlay {
-	visibility: hidden;
-	position: fixed;
-	height: 100vh;
+/*
+.media iframe {
 	width: 100vw;
-	top: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0, 0.4);
+	height: 100vh;
+	margin: 0 -20vw;
+}
+*/
+
+.container img {
+	width: 60vw;
+	margin: 2rem 0;
 }
 
-/* ---------------------- Content containers ---------------------- */
-
-#welcome {
-	height: calc(100vh - 4rem);
-	margin: 2rem;
-	border-radius: 10px;
-	background: #444;
+.container .full-img {
+	width: 90vw;
+	margin: 2rem -15vw;
 }
 
-.card {
-	border-radius: 10px;
+/* ---------------------- Header: Back button ---------------------- */
+
+.back-btn {
+	position: absolute;
+	top: 2rem;
+	left: 2.5rem;
+}
+
+.back-btn button {
+	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
+	font-size: 0.8rem;
+	border: solid 0.08rem;
+	border-color: inherit;
+	border-radius: 0.3rem;
+	padding: 0.6rem 0.9rem;
+	background-color: transparent;
+	color: #fff;
+}
+
+.back-btn button:hover {
+	border-color: #fff;
+	background-color: #fff;
+	color: #000;
+}
+
+#cirque .back-btn button:hover {
+	color: #339696;
+}
+
+#nps .back-btn button:hover {
+	color: #4c7c15;
+}
+
+/* ---------------------- Footer: Home button ---------------------- */
+
+footer {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.home-btn button {
+	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
+	font-size: 1.1rem;
+	border: solid 0.08rem;
+	border-color: inherit;
+	border-radius: 0.3rem;
+	padding: 0.9rem 1.6rem;
+	background-color: transparent;
+	color: #000;
+}
+
+#cirque .home-btn button {
+	border-color: #339696;
+	color: #339696;
+}
+
+#cirque .home-btn button:hover {
+	background-color: #339696;
+	color: #fff;
+}
+
+#nps .home-btn button {
+	border-color: #4c7c15;
+	color: #4c7c15;
+}
+
+#nps .home-btn button:hover {
+	background-color: #4c7c15;
+	color: #fff;
 }
 
 /* ----------------------------- Home ----------------------------- */
 
-body#home {
-	margin: 0;
+#home-links {
+	margin-top: 18vh;
 }
 
-#welcome h1 {
-	font-family: Circular STD, Gotham HTF, Lato, DINPro, Helvitica, Arial, sans-serif;
-	font-size: 5rem;
-	position: absolute;
-	margin-top: 2.2rem;
-	margin-left: 3.5rem;
-	color: #fff;
+#home-links a {
+	font-size: 1.3rem;
+	font-weight: 500;
 }
 
-#welcome h1:nth-of-type(2) {
-	text-align: right;
-	right: 0;
-	bottom: 0;
-	margin-bottom: 5rem;
-	margin-right: 5rem;
-}
-
-.vert-centre {
-	height: 100%;
-	display: table;
-	margin: 0 25vw;
-}
-
-#welcome p {
-	height: 100%;
-	display: table-cell;
-	vertical-align: middle;
-	color: #fff;
-}
-
-#portfolio .card, #home-etc .card {
-	display: inline-block;
-	width: calc(50vw - 3.2rem);
-	vertical-align: bottom;
-	margin-left: 2rem;
-	margin-bottom: 2rem;
-}
-
-#portfolio img {
-	visibility: visible;
-}
-
-#portfolio a {
-	visibility: hidden;
-}
-
-#home-etc .card {
+#work {
+	margin: 25vh 5vw 25vh 5vw;
 	text-align: center;
-	font-size: 1.2rem;
-	background-color: #444;
-	color: #fff;
-	padding: 3vh;
 }
 
-#home a:hover {
+#work img {
+	width: 35vw;
+}
+
+#work a:nth-of-type(even) {
+	margin-left: 5vw;
+}
+
+#work a:hover {
 	opacity: 0.8;
 }
 
 /* ----------------------------- About ----------------------------- */
 
-#about .current, #about h2 {
-	color: #2acfcc;
+#about {
+	background-color: #000;
+	color: #fff;
 }
 
-.contact a {
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	border: dashed 0.1rem #b3b3b3;
-	border-radius: 10px;
-	width: 29vw;
-	color: #444;
-	margin-right: 0.5vw;
-	margin-bottom: 1.5vh;
-	padding: 1rem 0;
+#contact {
+	margin-top: 15vh;
 }
 
-.contact a:hover {
-	color: #2acfcc;
+#contact a {
+	border-bottom: solid 0.1rem;
+}
+
+#contact a:hover {
+	opacity: 0.5;
 }
 
 /* ------------------------ Portfolio pages ------------------------ */
-
-#cirque .current, #cirque h2, #cirque .quote {
-	color: #339696;
-}
-
-#nps .current, #nps h2, #nps .quote {
-	color: #4c7c15;
-}
 
 .banner-main {
 	display: block;
@@ -250,151 +312,18 @@ body#home {
 	display: none;
 }
 
-#cirque .banner img, #nps .banner img {
-	width: 70vw;
-	margin: 3rem -5vw 1rem -5vw;
+.banner img {
+	width: 100vw;
 }
 
-iframe {
-	width: 70vw;
-	height: 39.5vw;
-	border: none;
-	margin-left: -5vw;
-	margin-top: 1rem;
+#cirque h1, #cirque blockquote {
+	color: #339696;
 }
 
-.content img, .design img, .project img {
-	width: 60vw;
-	margin: 1rem 0;
+#nps h1, .overview h2, #nps blockquote {
+	color: #4c7c15;
 }
 
-.mini-margin .quote {
-	margin: 0 5vw;
-}
-
-.mini-margin .quote-source {
-	font-size: 0.8rem;
-	font-style: italic;
-	margin: 0.3rem 5vw 1.8rem 5vw;
-	color: #b3b3b3;
-}
-
-.content .mini-margin img {
-	width: 50vw;
-	margin: 1rem 5vw;
-}
-
-.project iframe {
-	width: 60vw;
-	margin: 1rem 0;
-}
-
-#cirque .project iframe {
-	height: 42.4vw;
-}
-
-#nps .project iframe {
-	height: 34.9vw;
-}
-
-.project p {
-	margin-top: 0.5rem;
-	margin-bottom: 3rem;
-}
-
-/* --------------------- Slideshow / Carousel --------------------- */
-/* -- From https://www.w3schools.com/howto/howto_js_slideshow.asp -- */
-/*
-.slideshow-container {
-	height: 36.1vw;
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	border: solid 0.01rem rgba(68, 68, 68, 0.2);
-	background-color: #f4fbfb;
-	margin-top: 2rem;
-}
-
-.slides {
-	display: none;
-}
-
-.slides img {
-	height: 36.1vw;
-	margin: 0;
-}
-
-.slides img:nth-of-type(2) {
-}
-
-.slides-prev, .slides-next {
-	cursor: pointer;
-	position: absolute;
-	font-weight: bold;
-	font-size: 18px;
-	top: 50%;
-	margin-top: -22px;
-	padding: 16px;
-	color: #444;
-	transition: 0.6s ease;
-}
-
-.slides-prev {
-	left: 0;
-}
-
-.slides-next {
-	right: 0;
-}
-
-.slides-prev:hover, .slides-next:hover {
-	background-color: rgba(255,255,255,0.9);
-}
-
-.slides-text {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	text-align: center;
-	font-size: 0.9rem;
-	color: #f2f2f2;
-	opacity: 0.5;
-	margin-bottom: 1rem;
-}
-
-.slides-dot {
-	cursor: pointer;
-	display: inline-block;
-	height: 10px;
-	width: 10px;
-	border-radius: 50%;
-	margin: 0 0.3rem;
-	margin-top: 1.5rem;
-	background-color: #bbb;
-	transition: background-color 0.6s ease;
-}
-
-.slides-dot-active, .slides-dot:hover {
-	background-color: #444;
-}
-
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
-
-@keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
-*/
 /* ------------------------- Media Queries ------------------------- */
 
 /* --------------------- Wide Desktop = > 90em --------------------- */
