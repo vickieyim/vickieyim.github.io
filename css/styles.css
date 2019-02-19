@@ -267,7 +267,7 @@ footer {
 }
 
 #work {
-	margin: 25vh 5vw 25vh 5vw;
+	margin: 25vh 0;
 	text-align: center;
 }
 
@@ -347,160 +347,101 @@ footer {
 /* ------------------------- Tablet = 50em ------------------------- */
 
 @media (max-width: 50em) {
-
-	body {
-		margin: 0 10vw;
+	
+	.overview h1 {
+		font-size: 4.5rem;
 	}
-
-	p {
-		font-size: 0.9rem;
+	
+	.overview h2 {
+		line-height: 2.5rem;
 	}
 
 	h2 {
-		font-size: 1.8rem;
+		font-size: 2.5rem;
 	}
 
 	h3 {
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
-
-	.nav a {
-		font-size: 0.9rem;
+	
+	p {
+		font-size: 1rem;
 	}
-
-	.overlay {
-		visibility: visible;
+	
+	.container {
+		margin: 0 10vw;
 	}
-
-	#welcome {
-		height: calc(100vh - 2rem);
-		margin: 1rem;
-		background: #444;
+	
+	#home-links {
+		margin-top: 10vh;
 	}
-
-	#welcome h1 {
-		font-weight: 400;
-		font-size: 3rem;
+	
+	#work {
+		margin: 15vh 0;
 	}
-
-	#welcome h1:nth-of-type(2) {
-		margin-bottom: 4rem;
-		margin-right: 4rem;
+	
+	#work img {
+		width: 46vw;
 	}
-
-	.contact a {
-		width: 39vw;
+	
+	#work a:nth-of-type(even) {
+		margin-left: 2vw;
 	}
-
-	#portfolio .card, #home-etc .card {
-		width: calc(50vw - 1.65rem);
-		margin-left: 1rem;
-		margin-bottom: 1rem;
+	
+	.specifics {
+		width: 40vw;
 	}
-
-	#cirque .banner img, #nps .banner img {
-		width: 90vw;
-		margin-top: 4.5rem;
+	
+	.media {
+		margin: 0 -10vw;
 	}
-
-	iframe {
-		width: 90vw;
-		height: 50.7vw;
-		border: none;
-		margin-top: 1rem;
-	}
-
-	.content .mini-margin img {
-		width: 70vw;
-	}
-
-	.content img, .design img, .project img {
+	
+	.container img {
 		width: 80vw;
 	}
-
-	.project iframe {
-		width: 80vw;
+	
+	.container .full-img {
+		width: 90vw;
+		margin: 2rem -5vw;
 	}
-
-	#cirque .project iframe {
-		height: 56.6vw;
-	}
-
-	#nps .project iframe {
-		height: 46vw;
-	}
-
+	
 }
 
 /* ---------------------- Small Tablet = 36em ---------------------- */
 
 @media (max-width: 36em) {
-
-	body {
-		margin: 0 5vw;
+	
+	#home h1 {
+		font-size: 2rem;
+	}
+	
+	.overview h1 {
+		font-size: 3.5rem;
 	}
 
-	.open-nav {
-		background-color: #fff;
+	h2 {
+		font-size: 2rem;
 	}
-
-	#portfolio .card {
-		width: calc(100vw - 2rem);
+	
+	h4 {
+		font-size: 0.8rem;
 	}
-
-	#home-etc .card {
-		font-size: 1rem;
+	
+	p {
+		font-size: 0.95rem;
 	}
-
-	.contact a {
-		width: 43vw;
+	
+	blockquote {
+		font-size: 1.1rem;
+		margin: 2rem 2.5rem 5rem 2.5rem;
 	}
-
-	.banner-main {
-		display: none;
+	
+	blockquote:nth-of-type(n+2) {
+		margin-top: -3rem;
 	}
-
-	.banner-phone {
-		display: block;
-	}
-
-	#cirque .banner img, #nps .banner img {
-		width: 90vw;
-		margin: 4.5rem 0 1rem 0;
-	}
-
-	iframe {
-		width: 90vw;
-		margin-left: 0;
-	}
-
-	.content img, .design img, .project img {
-		width: 90vw;
-	}
-
-	.mini-margin .quote {
-		margin: 0;
-	}
-
-	.mini-margin .quote-source {
-		margin: 0.3rem 0 1.8rem 0;
-	}
-
-	.content .mini-margin img {
-		width: 90vw;
-		margin: 1rem 0;
-	}
-
-	.project iframe {
-		width: 90vw;
-	}
-
-	#cirque .project iframe {
-		height: 63.6vw;
-	}
-
-	#nps .project iframe {
-		height: 52vw;
+	
+	#home-links {
+		margin-top: 10vh;
 	}
 
 }
@@ -508,29 +449,110 @@ footer {
 /* ----------------------- Mobile = 26.75em ----------------------- */
 
 @media (max-width: 26.75em) {
+	
+	#about h1 {
+		font-size: 1.3rem;
+	}
+	
+	.overview h1 {
+		font-size: 3rem;
+		margin: 3rem 0 2rem 0;
+	}
+	
+	.overview h2 {
+		margin: -1.5rem 0 2rem 0;
+	}
 
+	h2 {
+		margin-bottom: 4rem;
+	}
+
+	h3 {
+		line-height: 2rem;
+		margin: 4rem 0 1rem 0;
+	}
+	
+	h4 {
+		margin-top: 8rem;
+	}
+	
+	.design h4:not(:nth-of-type(1)) {
+		margin-bottom: -0.5rem;
+	}
+	
 	p {
-		margin: 4vh 0;
+		margin: 1rem 0;
 	}
-
-	.nav a {
-		margin: 0.2rem 1.4rem;
+	
+	blockquote {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		margin: 2rem 1rem 4rem 1rem;
 	}
-
-	.nav a:nth-of-type(2) {
-		margin-top: -1rem;
+	
+	blockquote:nth-of-type(n+2) {
+		margin-top: -2.5rem;
 	}
-
-	.nav .close-nav {
-		margin: 0.3rem 1.4rem;
+	
+	.container {
+		margin: 0 5vw;
 	}
-
-	.open-nav {
-		margin: 0.6rem 1rem;
+	
+	.container .end, .container .end.full-img {
+		margin-bottom: 6rem;
 	}
-
-	.vert-centre {
-		margin: 0 17vw;
+	
+	#home .container {
+		padding: 0 15vw;
+	}
+	
+	#about .container {
+		margin: 20vh 15vw 10vh 15vw;
+	}
+	
+	.home-btn button {
+		font-size: 1rem;
+		padding: 0.7rem 1.2rem;
+	}
+	
+	#work {
+		margin-bottom: 1vh;
+	}
+	
+	#work img {
+		width: 90vw;
+		margin-bottom: 2.5vh;
+	}
+	
+	#work a:nth-of-type(even) {
+		margin-left: 0;
+	}
+	
+	.col-2 {
+		margin: 0 0 3rem 0;
+	}
+	
+	.specifics {
+		width: 90vw;
+		margin: 1.25rem 0;
+	}
+	
+	.specifics:nth-of-type(n) {
+		padding: 0;
+	}
+	
+	.media {
+		margin: 0 -5vw;
+	}
+	
+	.container img {
+		width: 90vw;
+		margin: 1rem 0;
+	}
+	
+	.container .full-img {
+		width: 100vw;
+		margin: 1rem -5vw;
 	}
 
 }
