@@ -411,10 +411,6 @@ footer {
 
 @media (max-width: 36em) {
 	
-	body {
-		background-color: beige;
-	}
-	
 	#home h1 {
 		font-size: 2rem;
 	}
@@ -453,10 +449,6 @@ footer {
 /* ----------------------- Mobile = 26.75em ----------------------- */
 
 @media (max-width: 26.75em) {
-	
-	body {
-		background-color: aliceblue;
-	}
 	
 	#about h1 {
 		font-size: 1.3rem;
