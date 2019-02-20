@@ -304,11 +304,11 @@ footer {
 
 /* ------------------------ Portfolio pages ------------------------ */
 
-.banner-main {
+.main {
 	display: block;
 }
 
-.banner-phone {
+.mobile {
 	display: none;
 }
 
@@ -411,6 +411,10 @@ footer {
 
 @media (max-width: 36em) {
 	
+	body {
+		background-color: beige;
+	}
+	
 	#home h1 {
 		font-size: 2rem;
 	}
@@ -449,6 +453,10 @@ footer {
 /* ----------------------- Mobile = 26.75em ----------------------- */
 
 @media (max-width: 26.75em) {
+	
+	body {
+		background-color: aliceblue;
+	}
 	
 	#about h1 {
 		font-size: 1.3rem;
@@ -510,6 +518,11 @@ footer {
 		margin: 20vh 15vw 10vh 15vw;
 	}
 	
+	.back-btn {
+		top: 1.8rem;
+		left: 1.8rem;
+	}
+	
 	.home-btn button {
 		font-size: 1rem;
 		padding: 0.7rem 1.2rem;
@@ -526,6 +539,14 @@ footer {
 	
 	#work a:nth-of-type(even) {
 		margin-left: 0;
+	}
+	
+	.main {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
 	}
 	
 	.col-2 {
