@@ -1,7 +1,7 @@
 /* ----------------------------- Main ----------------------------- */
 
 html {
-	font-family: Circular STD, Gotham HTF, Lato, DINPro, Helvitica, Arial, sans-serif;
+	font-family: Circular STD, Gotham HTF, Lato, DINPro, Helvetica, Arial, sans-serif;
 	font-size: 1.05rem;
 	font-weight: 300;
 }
@@ -127,7 +127,7 @@ h4 {
 	margin: 0 20vw;
 }
 
-.container .end, .container .end.full-img {
+.container .end, .container .end.full-img, .container .end.p {
 	margin-bottom: 10rem;
 }
 
@@ -221,7 +221,7 @@ h4 {
 
 footer {
 	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 
 .home-btn button {
@@ -268,20 +268,18 @@ footer {
 }
 
 #work {
-	margin: 25vh 0;
+	margin: 15vh 0;
 	text-align: center;
 }
 
 #work img {
-	width: 35vw;
-}
-
-#work a:nth-of-type(even) {
-	margin-left: 5vw;
+	width: 70vw;
+	border-radius: 8px;
+	margin-bottom: 10vh;
 }
 
 #work a:hover {
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 /* ----------------------------- About ----------------------------- */
