@@ -1,7 +1,7 @@
 /* ----------------------------- Main ----------------------------- */
 
 html {
-	font-family: Circular STD, Gotham HTF, Lato, DINPro, Helvetica, Arial, sans-serif;
+	font-family: Circular STD, Gotham HTF, SF Pro, Helvetica, Arial, sans-serif;
 	font-size: 1.05rem;
 	font-weight: 300;
 }
@@ -24,13 +24,20 @@ p {
 	color: #555;
 }
 
+figcaption {
+	font-size: 0.9rem;
+	color: #999;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
 blockquote {
 	font-family: FF Kievit Pro;
 	font-size: 1.2rem;
 	font-style: italic;
 	line-height: 2rem;
 	margin: 4rem 2.5rem 6rem 2.5rem;
-	color: #b3b3b3;
+	color: #999;
 }
 
 blockquote:nth-of-type(n+2) {
@@ -88,14 +95,14 @@ a, a button {
 }
 
 h2 {
-	font-family: Gotham HTF, Lato;
+	font-family: Gotham HTF, SF Pro;
 	font-weight: 600;
 	font-size: 3.5rem;
 	margin: 1rem 0 6rem 0;
 }
 
 h3 {
-	font-family: Gotham HTF, Lato;
+	font-family: Gotham HTF, SF Pro;
 	font-weight: 500;
 	font-size: 1.4rem;
 	margin: 5rem 0 1rem 0;
@@ -104,7 +111,7 @@ h3 {
 h4 {
 	font-weight: 100;
 	font-size: 0.9rem;
-	color: #b3b3b3;
+	color: #999;
 	margin: 0;
 	margin-top: 12rem;
 }
@@ -161,6 +168,10 @@ h4 {
 	padding-left: 5vw;
 }
 
+.specifics.no-media {
+	margin-bottom: 0;
+}
+
 .media {
 	display: block;
 	margin: 0 -20vw;
@@ -182,6 +193,10 @@ h4 {
 .container .full-img {
 	width: 90vw;
 	margin: 2rem -15vw;
+}
+
+.container img.with-caption {
+	margin-bottom: 0.8rem;
 }
 
 /* ---------------------- Header: Back button ---------------------- */
@@ -215,6 +230,10 @@ h4 {
 
 #nps .back-btn button:hover {
 	color: #4c7c15;
+}
+
+#tesla .back-btn button:hover {
+	color: #e82127;
 }
 
 /* ---------------------- Footer: Home button ---------------------- */
@@ -252,6 +271,16 @@ footer {
 
 #nps .home-btn button:hover {
 	background-color: #4c7c15;
+	color: #fff;
+}
+
+#tesla .home-btn button {
+	border-color: #e82127;
+	color: #e82127;
+}
+
+#tesla .home-btn button:hover {
+	background-color: #e82127;
 	color: #fff;
 }
 
@@ -303,7 +332,7 @@ footer {
 
 /* ------------------------ Portfolio pages ------------------------ */
 
-.main {
+.desktop {
 	display: block;
 }
 
@@ -321,6 +350,10 @@ footer {
 
 #nps h1, .overview h2, #nps blockquote {
 	color: #4c7c15;
+}
+
+#tesla h1, #tesla blockquote {
+	color: #e82127;
 }
 
 /* ------------------------- Media Queries ------------------------- */
@@ -525,14 +558,14 @@ footer {
 	
 	#work img {
 		width: 90vw;
-		margin-bottom: 2.5vh;
+		margin-bottom: 8vh;
 	}
 	
 	#work a:nth-of-type(even) {
 		margin-left: 0;
 	}
 	
-	.main {
+	.desktop {
 		display: none;
 	}
 
