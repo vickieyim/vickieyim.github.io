@@ -11,27 +11,56 @@
 	</head>
 
 	<body id="home">
-		
-		<div class="container">
-			<div id="hello">
-				<h1>Hi, my name is Vickie.</h1>
-				<h1>I design User Experiences through empathy, understanding, and an endless curiosity.</h1>
-			</div>
-			<div id="home-links">
-				<a href="about.html">About</a>
-				<a href="https://www.behance.net/vickieyim" target="_blank">Behance</a>
-			</div>
-		</div>
 
-		<div id="work">
-			<a class="desktop" href="cirque.html"><img src="img/home-cirque.png" alt="Cirque du Soleil"></a>
-			<a class="mobile" href="cirque.html"><img src="img/home-cirque-mobile.png" alt="Cirque du Soleil"></a>
-			
-			<a class="desktop" href="nps.html"><img src="img/home-nps.png" alt="National Park Service"></a>
-			<a class="mobile" href="nps.html"><img src="img/home-nps-mobile.png" alt="National Park Service"></a>
-			
-			<a class="desktop" href="tesla.html"><img src="img/home-tesla.png" alt="Tesla Roadster"></a>
-			<a class="mobile" href="tesla.html"><img src="img/home-tesla-mobile.png" alt="Tesla Roadster"></a>
+		<header class="nav">
+			<a href="index.html">
+                <img class="logo desktop" src="img/favicon.png">
+            </a>
+			<nav class="nav-row">
+				<a class="active" href="index.html">Work</a>
+				<a href="ideas.html">Ideas</a>
+				<a href="about.html">About</a>
+			</nav>
+		</header>
+		
+		<div class="grid-work">
+			<div id="hello" class="grid-2col">
+				<div>
+					<h1>Vickie Yim</h1>
+					<p>Product designer of 4+ years</p>
+					<p>Previously working in fintech payment solutions and retail operations</p>
+				</div>
+				<div id="home-links">
+					<a href="about.html">About Me</a>
+					<a href="img/resume.pdf" target="_blank">Resume</a>
+				</div>
+			</div>
+
+			<a class="grid-2col" href="space-planner.html">
+				<img src="img/space-planner/space-planner-editor.png" alt="Space Planner Editor">
+				<h3>Canadian Tire</h3>
+				<div class="project-name">
+					<h2>Space Planner Editor</h2>
+					<img class="locked" src="img/lock-icon.svg" alt="Password protected">
+				</div>
+			</a>
+
+			<a class="grid-2col" href="product-ordering.html">
+				<img src="img/product-ordering/product-ordering-tool.png" alt="Product Ordering Tool">
+				<h3>Canadian Tire</h3>
+				<div class="project-name">
+					<h2>Product Ordering Tool</h2>
+					<img class="locked" src="img/lock-icon.svg" alt="Password protected">
+				</div>
+			</a>
+
+			<a class="grid-2col" href="payment-platform.html">
+				<img src="img/payment-platform/payment-tech-platform.png" alt="Payment Technology Platform">
+				<h3>Reap</h3>
+				<div class="project-name">
+					<h2>Payment Technology Platform</h2>
+				</div>
+			</a>
 		</div>
 
 		<!-- HTML5shiv allows IE below version 9 to work with HTML5 elements. Note the conditionals before and after that do not load this script if browser is greater-than or equal-to IE9. -->
