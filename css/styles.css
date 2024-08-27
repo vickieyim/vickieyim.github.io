@@ -36,6 +36,11 @@ figcaption {
 	margin-bottom: 3rem;
 }
 
+p.quote {
+	color: #4DB6AC;
+	font-weight: 500;
+}
+
 blockquote {
 	font-family: FF Kievit Pro;
 	font-size: 1.2rem;
