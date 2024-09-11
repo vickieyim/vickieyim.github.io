@@ -285,6 +285,7 @@ section:nth-last-of-type(1) {
 }
 
 #about section {
+	margin: 0 10vw;
 	margin-bottom: 6rem;
 }
 
@@ -419,7 +420,7 @@ a.payment-platform:hover {
 /* ----------------------------- About ----------------------------- */
 
 #about {
-	margin: 8rem 20vw;
+	margin-top: 8rem;
 }
 
 #contact a {
@@ -504,6 +505,10 @@ img {
 
 @media (max-width: 50em) {
 
+	p {
+		font-size: 1rem;
+	}
+
 	img.desktop {
 		display: none;
 	}
@@ -534,6 +539,11 @@ img {
 		margin: 0;
 	}
 
+	#about section {
+		margin: 0;
+		margin-bottom: 6rem;
+	}
+
 	.img-gif {
 		padding: 0;
 	}
@@ -544,10 +554,6 @@ img {
 
 	div.gifs-3col {
 		grid-gap: 1rem;
-	}
-
-	p {
-		font-size: 1rem;
 	}
 
 	.media {
@@ -579,7 +585,7 @@ img {
 		display: inline-flex;
 		width: 100%;
 		justify-content: space-between;
-		padding: 2rem 4rem;
+		padding: 2rem 3rem;
 	}
 
 	.nav a {
@@ -655,12 +661,6 @@ img {
 
 	#about {
 		margin-bottom: 6rem;
-	}
-
-	hr.solid {
-		margin: 0 6vw;
-		margin-top: 6rem;
-		margin-bottom: 4rem;
 	}
 
 	div.gifs-3col {
