@@ -6,56 +6,68 @@ html {
 	font-weight: 300;
 }
 
+h1, h2, h3 {
+	font-family: Tiempos Headline, Source Serif Pro, serif;
+}
+
+#home h1, #about h1, #home h3, h4 {
+	font-family: Circular STD, Gotham HTF, SF Pro, Helvetica, Arial, sans-serif;
+}
+
 *, *::after, *::before {
 	box-sizing: border-box;
 }
 
 body {
 	transition: 0.5s;
-	background-color: #1a1a1a;
-	color: #eee;
-	margin: 0 4vw;
+	background-color: #f5f5f5;
+	color: #212121;
+	margin: 6rem 10vw;
 }
 
-body#cirque, body#nps, body#tesla {
-	background-color: #fff;
-	color: #000;
+p {
+	font-size: 1rem;
+	line-height: 150%;
 }
 
-#cirque p, #nps p, #tesla p {
-	font-size: 1.1rem;
-	line-height: 2rem;
-	margin: 1.5rem 0;
-	color: #555;
+.bold {
+	font-weight: bold;
+}
+
+ul {
+	margin: 0;
+	margin-top: 0.8rem;
+}
+
+li {
+	margin-top: 0.5rem;
 }
 
 figcaption {
-	font-size: 0.9rem;
-	color: #999;
+	font-family: Roboto Mono, Noto Sans Mono, PT Mono;
+	font-size: 0.8rem;
+	color: #9e9e9e;
+	text-align: left;
+	line-height: 150%;
+	margin-top: 0.7rem;
+	margin-bottom: 1rem;
+}
+
+.img-gif figcaption {
 	text-align: center;
-	margin-bottom: 3rem;
+	margin-top: 1.2rem;
 }
 
-p.quote {
-	color: #4DB6AC;
-	font-weight: 500;
-}
-
-blockquote {
-	font-family: FF Kievit Pro;
-	font-size: 1.2rem;
-	font-style: italic;
-	line-height: 2rem;
-	margin: 4rem 2.5rem 6rem 2.5rem;
-	color: #999;
-}
-
-blockquote:nth-of-type(n+2) {
-	margin-top: -4rem;
-}
-
-.specifics p {
+.quote p {
+	font-weight: bold;
 	margin: 0;
+}
+
+p.quote-by {
+	font-size: 0.9rem;
+	font-weight: normal;
+	color: #9e9e9e;
+	margin-top: 1rem;
 }
 
 a, a button {
@@ -68,150 +80,185 @@ a, a button {
 /* --------------------------- Headings --------------------------- */
 
 h1 {
-	font-size: 4rem;
+	font-size: 3.8rem;
 	margin: 0;
 }
 
 #home h1 {
-	font-size: 3.5rem;
+	font-family: Circular STD, Gotham HTF, SF Pro, Helvetica, Arial, sans-serif;
+	font-size: 3rem;
 }
 
 h2 {
-	font-size: 1.4rem;
-	text-transform: uppercase;
+	font-size: 2rem;
+	margin: 0;
 }
 
-.intro h2, .next-project h2 {
+.grid-proj h2 {
+	font-size: 1.8rem;
+	margin: 0;
+}
+
+.intro h2 {
 	text-transform: none;
 	font-weight: 200;
 }
 
-.next-project h2 {
+.next-proj h2 {
 	font-size: 1.8rem;
+	margin: 0;
+}
+
+.grid-proj h3 {
+	font-size: 0.9rem;
+	font-weight: normal;
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
 	margin: 0;
 }
 
 h3 {
-	font-size: 1.2rem;
-	color: #9e9e9e;
-}
-
-h3.subheader {
 	font-size: 1.4rem;
-}
-
-.next-project h3 {
-	text-transform: uppercase;
+	color: #9e9e9e;
 	margin: 0;
-	margin-bottom: 0.5rem;
 }
 
 #hello p {
-	font-size: 1.1rem;
-	color: #9e9e9e;
+	font-size: 1.3rem;
+	line-height: 150%;
+	margin-bottom: 0;
 }
 
-#about h1 {
+#experience h1 {
+	font-weight: bold;
 	font-size: 1rem;
+	color: #9e9e9e;
 	text-transform: uppercase;
-	margin: 0;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 #about p {
 	font-size: 1.5rem;
-	font-weight: 400;
-	color: #eeeeee;
+	font-weight: 500;
 }
 
 #contact p {
 	margin: 0;
-	margin-bottom: 1rem;
+	margin-bottom: 0.8rem;
+}
+
+#experience p.title {
+	color: #212121;
+	font-size: 1.2rem;
+	font-weight: lighter;
 }
 
 #experience p {
-	margin: 0.5rem 0;
-}
-
-#experience .work-details {
 	color: #9e9e9e;
 	font-size: 1rem;
+	font-weight: lighter;
+	margin: 0;
 }
 
-.overview h1 {
-	font-size: 5rem;
-	font-weight: 600;
-	margin: 5rem 0 4rem 0;
+.pitch p {
+	font-size: 1.5rem;
+	margin-top: 1.2rem;
 }
 
-.overview h2 {
-	font-size: 1.8rem;
-	font-weight: 400;
-	margin: -3.5rem 0 4rem 0 ;
+section p {
+	margin: 0;
+	margin-top: 1.5rem;
 }
 
-#cirque h2, #nps h2, #telsa h2 {
-	font-family: Gotham HTF, SF Pro;
-	font-weight: 600;
-	font-size: 3.5rem;
-	margin: 1rem 0 6rem 0;
+.details p {
+	margin-top: 0;
 }
 
-#cirque h3, #nps h3, #tesla h3 {
-	font-family: Gotham HTF, SF Pro;
-	font-weight: 500;
-	font-size: 1.4rem;
-	margin: 5rem 0 1rem 0;
+.subsection p {
+	margin-top: 1rem;
 }
 
 h4 {
-	font-weight: 100;
-	font-size: 0.9rem;
-	color: #999;
-	margin: 0;
-	margin-top: 12rem;
-}
-
-.specifics h4, .design h4 {
-	letter-spacing: 0.8px;
-}
-
-.specifics h4 {
-	margin: 0 0 1rem 0;
-}
-
-.design h4:not(:nth-of-type(1)) {
+	font-weight: bold;
+	font-size: 1rem;
+	color: #9e9e9e;
+	text-transform: uppercase;
 	margin-top: 2rem;
+	margin-bottom: 0.5rem;
 }
 
 /* --------------------------- Containers --------------------------- */
 
-.grid-work {
+.grid-proj {
+	display: inline-flex;
+	border: 2px solid #e0e0e0;
+	border-radius: 12px;
+	align-items: center;
+	padding: 3vw 0;
+	padding-left: 4vw;
+	margin-bottom: 1.2rem;
+}
+
+.grid-proj p {
+	font-size: 1.2rem;
+	line-height: 150%;
+}
+
+.proj-tags {
+	display: inline-flex;
+	margin-bottom: 1rem;
+}
+
+.proj-tags h3:nth-of-type(2) {
+	margin-left: 1.3rem;
+}
+
+.protected {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+
+.protected p {
+	font-size: 1rem;
+	color: #9e9e9e;
+	margin: 0;
+	margin-left: 0.8rem;
+}
+
+.work-col-1 {
+	width: 50%;
+	margin-right: 4%;
+	height: 100%;
+}
+
+.work-col-2 {
+	width: 48%;
+}
+
+.work-col-2 img {
+	padding: 0;
+}
+
+.details-2col {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 3vw;
+	grid-gap: 2vw;
 	grid-auto-flow: row dense;
-	margin: 0 4vw;
-	margin-bottom: 4rem;
+	margin: 0;
 }
 
-.grid-2col {
-	background-color: #1a1a1a;
-	border: 1px solid rgba(255, 255, 255, 0.2);
+.points {
+	margin-bottom: 2.5rem;
+}
+
+.quote {
+	display: inline-flex;
+	align-items: flex-start;
+	background-color: #f2f2f2;
 	border-radius: 8px;
-	padding: 4vw;
-}
-
-a.grid-2col:hover {
-	background-color: #212121;
-}
-
-#hello.grid-2col {
-	position: relative;
-	background-color: none;
-	box-shadow: 4px 4px 24px 0 rgba(0, 0, 0, 0.75), -4px -4px 16px 0 rgba(33, 33, 33, 0.75);
-	border: none;
-	border-radius: 8px;
+	margin-top: 1.5rem;
+	padding: 2rem 4rem 2rem 1.5rem;
 }
 
 .grid-ideas {
@@ -219,7 +266,6 @@ a.grid-2col:hover {
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 3vw;
 	grid-auto-flow: row dense;
-	margin: 0 4vw;
 	margin-bottom: 4rem;
 }
 
@@ -232,27 +278,27 @@ a.grid-2col:hover {
 }
 
 section {
-	margin-bottom: 9rem;
+	margin-bottom: 7.5rem;
 }
 
-section h1, section h2, section h3, section p {
-	padding: 0 14vw;
-}
-
-section h2, section p {
-	margin-bottom: 1.4rem;
-}
-
-h3.subheader {
-	margin-bottom: 1rem;
+section:nth-last-of-type(1) {
+	margin-bottom: 10rem;
 }
 
 #about section {
-	margin-bottom: 4rem;
+	margin-bottom: 6rem;
+}
+
+.img-cap {
+	margin-top: 2rem;
+}
+
+.img-cap.middle {
+	margin-bottom: 3rem;
 }
 
 .subsection {
-	margin-top: 6rem;
+	margin-top: 5rem;
 }
 
 p.subsection {
@@ -260,52 +306,22 @@ p.subsection {
 }
 
 div.gifs-3col {
-	display: inline-flex;
-	text-align: none;
-	justify-content: space-between;
-	width: 100%;
-	padding: 0 14vw;
-	margin-top: 3rem;
-}
-
-.gifs-3col img {
-	width: 15vw;
-}
-
-.next-project {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 6vw;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2rem;
+	grid-auto-flow: row dense;
+	width: 100%;
 }
 
-#cirque .container, #nps .container, #tesla .container {
-	margin: 0 20vw;
-}
-
-.container .end, .container .end.full-img, .container .end.p {
-	margin-bottom: 10rem;
-}
-
-.col-2 {
-	display: inline-block;
-}
-
-.specifics {
-	float: left;
-	width: 30vw;
-	margin: 2rem 0 6rem 0;
-}
-
-.specifics:nth-of-type(1) {
-	padding-right: 5vw;
-}
-
-.specifics:nth-of-type(2) {
-	padding-left: 5vw;
-}
-
-.specifics.no-media {
-	margin-bottom: 0;
+.next-proj {
+	display: inline-flex;
+	border: 2px solid #e0e0e0;
+	border-radius: 12px;
+	align-items: center;
+	max-width: 100%;
+	padding: 1.7rem 2.5rem;
+	margin-left: auto;
+	margin-right: 0;
 }
 
 .media {
@@ -321,259 +337,90 @@ div.gifs-3col {
 }
 */
 
-.container img {
-	width: 60vw;
-	margin: 2rem 0;
-}
-
-.container .full-img {
-	width: 90vw;
-	margin: 2rem -15vw;
-}
-
-.container img.with-caption {
-	margin-bottom: 0.8rem;
-}
-
-/* ---------------------------- Header ---------------------------- */
+/* ------------------------------ Nav ------------------------------ */
 
 .nav {
+	position: absolute;
+	top: 0;
+	right: 0;
 	display: inline-flex;
 	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	padding: 2rem;
+	padding: 2rem 3rem;
 }
 
-.logo {
-	width: 2rem;
-	padding: 0;
-}
-
-.nav-row {
-	float: right;
-}
-
-nav a {
+.nav a {
 	text-transform: uppercase;
 	font-size: 0.9rem;
 	font-weight: 600;
 	margin-right: 1.5rem;
-	color: #757575;
+	color: #bdbdbd;
 	text-decoration: none;
 	line-height: 1.5rem;
 }
   
-nav a:hover {
-	color: #eeeeee;
+.nav a:hover {
+	color: #616161;
 }
 
-nav a.active {
-	color: #eeeeee;
+.nav a.active {
+	color: #212121;
 }
 
-nav a:nth-last-of-type(1) {
+.nav a:nth-last-of-type(1) {
 	margin-right: 0;
-}
-
-/* ---------------------- Header: Back button ---------------------- */
-
-.back-btn {
-	position: absolute;
-	top: 2rem;
-	left: 2.5rem;
-}
-
-.back-btn button {
-	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
-	font-size: 0.8rem;
-	border: solid 0.08rem;
-	border-color: inherit;
-	border-radius: 0.3rem;
-	padding: 0.6rem 0.9rem;
-	background-color: transparent;
-	color: #fff;
-}
-
-.back-btn button:hover {
-	border-color: #fff;
-	background-color: #fff;
-	color: #000;
-}
-
-#cirque .back-btn button:hover {
-	color: #339696;
-}
-
-#nps .back-btn button:hover {
-	color: #4c7c15;
-}
-
-#tesla .back-btn button:hover {
-	color: #e82127;
 }
 
 /* ---------------------- Footer: Home button ---------------------- */
 
-.next-project {
-	position: relative;
-	overflow: hidden;
-	background-color: #1a1a1a;
-	box-shadow: 4px 4px 24px 0 rgba(0, 0, 0, 0.75), -4px -4px 16px 0 rgba(33, 33, 33, 0.75);
-	border-radius: 8px;
-	margin: 0 14vw;
-	margin-top: 12rem;
-	margin-bottom: 4rem;
-	padding: 4vw;
+footer {
+	display: flex;
 }
 
-.next-label {
-	display: inline-flex;
-	align-items: flex-start;
-}
-
-.next-project .locked {
-	width: 1.1rem;
-	padding: 0;
-	margin-left: 0.5rem;
-	margin-top: 0.2rem;
-}
-
-.next-project .desktop.next-img {
-	position: absolute;
-	width: 25vw;
-	padding: 0;
-}
-
-.next-project:hover {
-	background-color: #212121;
-	color: #fff;
-	transition: all 0.25s;
-}
-
-#cirque footer, #nps footer, #tesla footer {
-	text-align: center;
-	margin-bottom: 5rem;
-}
-
-.home-btn button {
-	font-family: Gotham HTF, Lato, Circular STD, DINPro, Helvitica, Arial, sans-serif;
-	font-size: 1.1rem;
-	border: solid 0.08rem;
-	border-color: inherit;
-	border-radius: 0.3rem;
-	padding: 0.9rem 1.6rem;
-	background-color: transparent;
-	color: #000;
-}
-
-#cirque .home-btn button {
-	border-color: #339696;
-	color: #339696;
-}
-
-#cirque .home-btn button:hover {
-	background-color: #339696;
-	color: #fff;
-}
-
-#nps .home-btn button {
-	border-color: #4c7c15;
-	color: #4c7c15;
-}
-
-#nps .home-btn button:hover {
-	background-color: #4c7c15;
-	color: #fff;
-}
-
-#tesla .home-btn button {
-	border-color: #e82127;
-	color: #e82127;
-}
-
-#tesla .home-btn button:hover {
-	background-color: #e82127;
-	color: #fff;
+.next-arrow {
+	width: 3rem;
+	margin-left: 2rem;
 }
 
 /* ----------------------------- Home ----------------------------- */
 
-#home, #ideas {
-	background-color: #1a1a1a;
-	color: #eee;
+hr.solid {
+	height: 1px;
+	background-color: #757575;
+	border-width: 0;
+	margin: 4rem 0;
 }
 
-#home-links {
-	position: absolute;
-	bottom: 3rem;
-}
-
-#home-links a {
-	font-weight: 400;
-	margin-right: 2rem;
-}
-
-#home-links a:hover {
-	border-bottom: solid 0.1rem #ccc;
-	color: #ccc;
-}
-
-#work {
-	margin: 15vh 0;
-	text-align: center;
-}
-
-#work a:hover {
-	opacity: 0.6;
-}
-
-.project-name {
-	width: 100%;
-	display: inline-flex;
-	align-items: flex-end;
-	justify-content: space-between;
-}
-
-.project-name h2 {
-	font-size: 2rem;
-	font-weight: 200;
-	text-transform: none;
-	margin: 0;
-}
-
-.grid-work h3 {
-	text-transform: uppercase;
-	font-weight: 500;
-	margin-bottom: 0.5rem;
-}
-
-.grid-work img {
-	width: 80%;
-	padding: 0;
-	margin: 0 10%;
-	margin-top: 1rem;
-	margin-bottom: 2rem;
-}
-
-.grid-work .locked {
+.locked {
 	width: 1.2rem;
 	padding: 0;
 	margin: 0;
-	margin-left: 1rem;
-	margin-bottom: 0.3rem;
+}
+
+a.grid-proj:hover, a.next-proj:hover {
+	h3, .protected p {
+		color: #616161;
+	}
+	img.locked {
+		filter: brightness(70%);
+	}
+}
+
+a.space-planning:hover {
+	background-color: #64B5F6;
+}
+
+a.product-ordering:hover {
+	background-color: #4DB6AC;
+}
+
+a.payment-platform:hover {
+	background-color: #AB9DFA;
 }
 
 /* ----------------------------- About ----------------------------- */
 
 #about {
-	background-color: #1a1a1a;
-	color: #eeeeee;
-	margin-bottom: 8rem;
-}
-
-#contact {
-	margin: 6rem 0 7.5rem 0;
+	margin: 8rem 20vw;
 }
 
 #contact a {
@@ -584,56 +431,49 @@ nav a:nth-last-of-type(1) {
 	opacity: 0.5;
 }
 
-hr.solid {
-	border-width: 1px;
-	border-color: #757575;
-	margin: 0 14vw;
-	margin-top: 8rem;
-	margin-bottom: 5rem;
-}
-
 #experience div {
-	margin: 2rem 0;
+	margin: 1.5rem 0;
 }
 
 /* ------------------------ Portfolio pages ------------------------ */
 
-.intro {
+.intro div.details {
 	margin-top: 4rem;
 }
 
 img {
 	width: 100%;
-	padding-top: 2rem;
 }
 
-img.no-bg {
-	padding: 0 20vw;
-	padding-top: 2rem;
+.img-gif {
+	padding: 0 5vw;
+}
+
+.img-gif img {
+	box-shadow: 0px 1px 12px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+}
+
+.gifs-3col img {
+	box-shadow: none;
+	border-radius: none;
 }
 
 .desktop {
 	display: block;
 }
 
+.tablet {
+	display: none;
+}
+
 .mobile {
 	display: none;
 }
 
-.banner img {
-	width: 100vw;
-}
-
-#cirque h1, #cirque blockquote {
-	color: #339696;
-}
-
-#nps h1, .overview h2, #nps blockquote {
-	color: #4c7c15;
-}
-
-#tesla h1, #tesla blockquote {
-	color: #e82127;
+.quote img {
+	width: 2rem;
+	margin-right: 1rem;
 }
 
 /* ------------------------- Media Queries ------------------------- */
@@ -642,15 +482,17 @@ img.no-bg {
 
 @media (min-width: 90em) {
 	body {
-		max-width: 1440px;
-		margin: 0 auto;
+		max-width: 1280px;
+		margin: 6rem auto;
 	}
 }
 
 /* ------------------ Desktop Full Screen = 90em ------------------ */
 
 @media (max-width: 90em) {
-
+	body {
+		margin: 6rem 10vw;
+	}
 }
 
 /* ------------------------ Desktop = 70em ------------------------ */
@@ -663,66 +505,54 @@ img.no-bg {
 
 @media (max-width: 50em) {
 
-	#home-links {
-		position: static;
-		margin-top: 3rem;
+	img.desktop {
+		display: none;
 	}
 
-	.overview h1 {
-		font-size: 4.5rem;
+	.tablet {
+		display: block;
 	}
 
-	.overview h2 {
-		line-height: 2.5rem;
+	.grid-proj {
+		float: none;
+		display: flex;
+		flex-direction: column;
+		overflow: visible;
+		align-items: center;
+		padding: 5vw;
+		margin-bottom: 1.2rem;
 	}
 
-	#cirque h2, #nps h2, #tesla h2 {
-		font-size: 2.5rem;
+	.work-col-2 {
+		order: 1;
+		width: 90%;
+		margin-bottom: 1.5rem;
 	}
 
-	#cirque h3, #nps h3, #tesla h3 {
-		font-size: 1.3rem;
+	.work-col-1 {
+		order: 2;
+		width: auto;
+		margin: 0;
+	}
+
+	.img-gif {
+		padding: 0;
+	}
+
+	.img-gif figcaption {
+		text-align: left;
+	}
+
+	div.gifs-3col {
+		grid-gap: 1rem;
 	}
 
 	p {
 		font-size: 1rem;
 	}
 
-	.container {
-		margin: 0 10vw;
-	}
-
-	#home-links {
-		margin-top: 10vh;
-	}
-
-	#work {
-		margin: 15vh 0;
-	}
-
-	#work img {
-		width: 46vw;
-	}
-
-	#work a:nth-of-type(even) {
-		margin-left: 2vw;
-	}
-
-	.specifics {
-		width: 40vw;
-	}
-
 	.media {
 		margin: 0 -10vw;
-	}
-
-	.container img {
-		width: 80vw;
-	}
-
-	.container .full-img {
-		width: 90vw;
-		margin: 2rem -5vw;
 	}
 
 }
@@ -731,33 +561,8 @@ img.no-bg {
 
 @media (max-width: 36em) {
 
-	.overview h1 {
-		font-size: 3.5rem;
-	}
-
-	#cirque h2, #nps h2, #tesla h2 {
-		font-size: 2rem;
-	}
-
 	h4 {
-		font-size: 0.8rem;
-	}
-
-	#cirque p, #nps p, #tesla p {
-		font-size: 0.95rem;
-	}
-
-	blockquote {
-		font-size: 1.1rem;
-		margin: 2rem 2.5rem 5rem 2.5rem;
-	}
-
-	blockquote:nth-of-type(n+2) {
-		margin-top: -3rem;
-	}
-
-	#home-links {
-		margin-top: 10vh;
+		font-size: 1rem;
 	}
 
 }
@@ -766,103 +571,91 @@ img.no-bg {
 
 @media (max-width: 26.75em) {
 
-	section h1, section h2, section h3, section p {
-		padding: 0 6vw;
+	body {
+		margin: 8rem 8vw;
+		margin-bottom: 4rem;
 	}
 
 	.nav {
-		justify-content: center;
-	}
-
-	.nav-row {
-		width: 90%;
 		display: inline-flex;
+		width: 100%;
 		justify-content: space-between;
+		padding: 2rem 4rem;
 	}
 
-	nav a {
+	.nav a {
 		font-size: 1.1rem;
 	}
 
-	.intro {
-		margin-top: 2rem;
+	.grid-proj {
+		padding: 8vw 6vw;
+	}
+
+	.work-col-2 {
+		width: 100%;
 	}
 
 	h1 {
-		font-size: 3.5rem;
+		font-size: 3.2rem;
 	}
 
 	h2 {
-		font-size: 1.2rem;
+		font-size: 2rem;
+	}
+
+	.grid-proj h2 {
+		font-size: 1.5rem;
 	}
 
 	h3.subheader {
 		font-size: 1.2rem;
 	}
 
-	.next-project h3 {
-		font-weight: 100;
-	}
-
-	#hello p, #hello a {
-		font-size: 1.2rem;
+	.grid-proj p {
+		font-size: 1rem;
 	}
 
 	#about p {
 		font-size: 1.2rem;
 	}
 
-	section {
-		margin-bottom: 6.5rem;
+	.pitch p {
+		font-size: 1.3rem;
 	}
 
-	.subsection {
-		margin-top: 4rem;
+	ul {
+		padding-left: 1.2rem;
+	}
+
+	section {
+		margin-bottom: 6.5rem;
 	}
 
 	p.subsection {
 		margin-top: 5rem;
 	}
 
-	img {
-		padding-top: 1.5rem;
+	.quote {
+		display: block;
+		padding: 1.5rem;
 	}
 
-	img.no-bg {
-		padding: 0 6vw;
-		padding-top: 1rem;
+	.quote img {
+		margin-bottom: 0.8rem;
 	}
 
-	.grid-work, .grid-ideas {
+	.next-proj {
+		padding: 1.2rem 1.5rem;
+		padding-bottom: 1rem;
+	}
+
+	.grid-ideas {
 		grid-template-columns: 1fr;
 		grid-gap: 1.5rem;
-		margin-top: 2rem;
-	}
-
-	.grid-2col {
-		padding: 10vw;
-	}
-
-	.grid-work img {
-		width: 100%;
-		margin-left: 0;
-	}
-
-	.grid-work .locked {
-		width: 1.8rem;
-		padding: 0;
-		margin: 0;
-		margin-left: 1rem;
-		margin-bottom: 0.6rem;
 	}
 
 	#about {
 		margin-bottom: 6rem;
-	}
-
-	#about h1 {
-		font-size: 1rem;
-		margin-bottom: 3rem;
 	}
 
 	hr.solid {
@@ -871,123 +664,8 @@ img.no-bg {
 		margin-bottom: 4rem;
 	}
 
-/*
 	div.gifs-3col {
-		display: block;
-		text-align: center;
-		width: 100%;
-		padding: 0 6vw;
-	}
-	
-	.gifs-3col img {
-		width: auto;
-		margin: 0.5rem 0;
-		padding: 0 1rem;
-	}
-*/
-
-	div.gifs-3col {
-		padding: 0 6vw;
-		margin-bottom: 3rem;
-	}
-	
-	.gifs-3col img {
-		width: 25vw;
-		padding: 0;
-	}
-
-	.next-project {
-		display: block;
-		margin: 0 6vw;
-		margin-top: 10rem;
-		margin-bottom: 3rem;
-		padding: 8vw;
-		padding-bottom: 0;
-	}
-
-	.next-label {
-		width: 100%;
-		justify-content: space-between;
-	}
-
-	.next-project .mobile .next-img {
-		width: 80%;
-		margin-top: 2rem;
-	}
-
-	.overview h1 {
-		font-size: 3rem;
-		margin: 3rem 0 2rem 0;
-	}
-
-	.overview h2 {
-		margin: -1.5rem 0 2rem 0;
-	}
-
-	#cirque h2, #nps h2, #tesla h2 {
-		margin-bottom: 4rem;
-	}
-
-	#cirque h3, #nps h3, #tesla h3 {
-		line-height: 2rem;
-		margin: 4rem 0 1rem 0;
-	}
-
-	h4 {
-		margin-top: 8rem;
-	}
-
-	.design h4:not(:nth-of-type(1)) {
-		margin-bottom: -0.5rem;
-	}
-
-	p {
-		margin: 1rem 0;
-	}
-
-	blockquote {
-		font-size: 1rem;
-		line-height: 1.5rem;
-		margin: 2rem 1rem 4rem 1rem;
-	}
-
-	blockquote:nth-of-type(n+2) {
-		margin-top: -2.5rem;
-	}
-
-	.container {
-		margin: 0 5vw;
-	}
-
-	.container .end, .container .end.full-img {
-		margin-bottom: 6rem;
-	}
-
-	#home .container {
-		padding: 0 15vw;
-	}
-
-	.back-btn {
-		top: 1.8rem;
-		left: 1.8rem;
-	}
-
-	.home-btn button {
-		font-size: 1rem;
-		padding: 0.7rem 1.2rem;
-	}
-
-	#work {
-		margin-bottom: 1vh;
-	}
-
-	#work img {
-		width: 90vw;
-		margin-bottom: 8vh;
-	}
-
-	#work a:nth-of-type(even) {
-		margin-left: 0;
+		grid-gap: 0.5rem;
 	}
 
 	.desktop {
@@ -998,31 +676,8 @@ img.no-bg {
 		display: block;
 	}
 
-	.col-2 {
-		margin: 0 0 3rem 0;
-	}
-
-	.specifics {
-		width: 90vw;
-		margin: 1.25rem 0;
-	}
-
-	.specifics:nth-of-type(n) {
-		padding: 0;
-	}
-
 	.media {
 		margin: 0 -5vw;
-	}
-
-	.container img {
-		width: 90vw;
-		margin: 1rem 0;
-	}
-
-	.container .full-img {
-		width: 100vw;
-		margin: 1rem -5vw;
 	}
 
 }
