@@ -1,17 +1,17 @@
 /* ----------------------------- Main ----------------------------- */
 
 html {
-	font-family: Circular STD, Gotham HTF, SF Pro, Helvetica, Arial, sans-serif;
+	font-family: "Circular STD", "Gotham HTF", "SF Pro", "Helvetica", "Arial", sans-serif;
 	font-size: 1.05rem;
 	font-weight: 300;
 }
 
 h1, h2, h3 {
-	font-family: Tiempos Headline, Source Serif Pro, serif;
+	font-family: "Tiempos Headline", "Tiempos Fine" "Source Serif Pro", sans-serif;
 }
 
 #home h1, #about h1, #home h3, h4 {
-	font-family: Circular STD, Gotham HTF, SF Pro, Helvetica, Arial, sans-serif;
+	font-family: "Circular STD", "Gotham HTF", "SF Pro", "Helvetica", "Arial", sans-serif;
 }
 
 *, *::after, *::before {
@@ -44,7 +44,7 @@ li {
 }
 
 figcaption {
-	font-family: Roboto Mono, Noto Sans Mono, PT Mono;
+	font-family: "Roboto Mono", "Noto Sans Mono", "PT Mono";
 	font-size: 0.8rem;
 	color: #9e9e9e;
 	text-align: left;
@@ -85,7 +85,6 @@ h1 {
 }
 
 #home h1 {
-	font-family: Circular STD, Gotham HTF, SF Pro, Helvetica, Arial, sans-serif;
 	font-size: 3rem;
 }
 
