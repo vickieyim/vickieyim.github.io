@@ -36,11 +36,11 @@
                 </div>
                 <div>
                     <h4>Role</h4>
-                    <p>UX/UI Designer — User research, experience design, visual design, prototyping, quality assurance, motion design, frontend development</p>
+                    <p>Product Designer — User research, experience design, visual design, UX strategy, prototyping, QA testing, motion design. I joined Reap in its early startup days as its first UX/UI designer on a team of 10 people. I had a hand in every aspect of the end-to-end design and worked alongside my product manager to develop Reap's design process and contribute to strategic decisions.</p>
                 </div>
                 <div>
                     <h4>Overview</h4>
-                    <p>Reap is a growing payment technology platform that aims to help small and medium-sized businesses unlock cash flow to accelerate their success. Reap can help simplify business payments, whether cross-border or local, and provide instant credit to pay rents, salaries, invoices, taxes, vendors, and more, while using their preferred credit card to collect rewards like cash back and Air Miles.</p>
+                    <p>Reap is a fintech startup revolutionizing the way businesses manage cash flow and increase capital efficiency by leveraging credit cards to allow businesses to pay expenses and collect revenue to and from anyone, anywhere. My goal for this project/redeisgn was to understand customer needs and lead the design direction of the product in collaboration with my Product, Growth, and Engineering teams, including developing a design system and consolidating the payment and collection sides of Reap.</p>
                 </div>
             </div>
         </section>
@@ -50,13 +50,78 @@
         </section>
 
         <section>
-            <h2>The Problem</h2>
-            <p>As a startup, Reap is continually aiming to attract and gain the trust of new users. The platform was originally built for functionality over visual design, and was outdated in terms of usability, responsiveness, branding, and industry standards, resulting in poor impressions, user frustrations, and drop-offs.</p>
+            <h2>Business Context</h2>
+            <p>Reap is a payment technology platform that aims to help small and medium-sized businesses unlock cash flow to accelerate their growth and success. Reap can help simplify business payments and ease payment terms, whether cross-border (available in 40 currencies) or local, and provide instant credit to pay rents, salaries, invoices, taxes, vendors, and more, while allowing business owners to use their preferred credit cards to collect rewards like cash back and travel miles.</p>
+            <div class="points">
+                <h4>Business Goals</h4>
+                <ul>
+                    <li>Engage users and explain the benefits of using Reap to grow user base</li>
+                    <li>Develop a relationship with users to drive recurring use</li>
+                    <li>Understand current and new users' views about the company</li>
+                </ul>
+            </div>
         </section>
 
         <section>
-            <h2>Functional Testing for QA</h2>
-            <p>With my product and engineering team members, I conducted quality assurance tests in our dev environment to ensure our product met usability standards without errors or difficulties.</p>
+            <h2>The Challenge</h2>
+            <p>As a startup, Reap is continually aiming to attract new users and process more payments with its product offerings. But the platform was originally built for function over form, and was outdated in terms of usability, branding, modern design standards, etc., resulting in an unclear business proposition, poor impressions, and user drop-offs. And as a not-well-known business dealing with finances and payment security, it was always going to be more challenging to gain the trust of new users.</p>
+            <div class="points">
+                <h4>Analytical Insights</h4>
+                <ul>
+                    <li>Most user drop-off occurs between creating an account and making their first payment</li>
+                    <li>Lots of customer service emails asking what our service does, what types of documents to upload, etc.</li>
+                    <li>Majority of users do look through all the onboarding steps</li>
+                </ul>
+            </div>
+            <p>There were no security checks to sign up because we want to provide frictionless signup and get users signed up quickly, but more and more users dropped-off after each step of the payment process. <span class="bold">Was it because they just wanted to get a look at the product? Maybe they didn't trust Reap to make a payment?</span> Brand reputation couldn't be solved overnight, but what we could do was build brand equity through a product people want to use, and improve information and transparency. <span class="bold">How might we better showcase how Reap works, and the benefits of using it?</span></p>
+        </section>
+
+        <section>
+            <h2>Research and Discovery</h2>
+            <p>I began my research by performing a design review of the current experience on both desktop and mobile, noting down questions to discuss with my product manager, and my expected or desired behaviours. This allowed me to develop a strong understanding of the product and its benefits. I also wanted to get an idea of why users were leaving the site after creating an account. Was there not enough information on the website to explain what Reap does, and why people should use it? Or maybe it wasn't clear enough? Can we make a better first impression through onboarding?</p>
+            <div class="img-cap">
+                <img src="/img/payment-platform/design-review.png" alt="Design review of current experience">
+                <figcaption>Design review I performed to assess the current product experience</figcaption>
+            </div>
+
+            <div class="subsection">
+                <h3>Market Research</h3>
+                <p>Operating in Hong Kong, Reap did not have any direct competitors, so I worked with my product manager to identify companies in our market who operate in other countries to analyze their sign up and payment processes. This gave me a sense of what our users might expect from a product similar to ours, and validated which of our designs met market standards. I also looked into onboarding experiences from notable brands to find the best ways to create a personalized experience that met our business needs.</p>
+                <p>
+                    <span class="bold">Competitors:</span> Plastiq (North America), CardUp (Singapore, Malaysia), Melio (USA)<br>
+                    <span class="bold">Relevant inspiration:</span> FreshBooks, Razorpay, PayPal, Amazon, Stripe<br>
+                    <span class="bold">Onboarding inspiration:</span> Airtable, HubSpot, FreshBooks, Intercom, Shopify
+                </p>
+                <div class="img-cap">
+                    <img src="/img/payment-platform/research-inspiration.png" alt="Competitor research and inspiration">
+                    <figcaption>Research into competitors and companies in relevant markets for inspiration</figcaption>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>User Research</h3>
+                <p>Since Reap was a new business without a large user base nor a research budget, I decided to begin my user research by interviewing people who could fit into our secondary user group: users who could use Reap for personal expenses. Though not our primary target, it gave me a starting point to assess Reap's credibility based on branding, as well as usability. I wanted to know: <span class="bold">What makes you trust a site with personal info such as your credit card? Would you use a product like Reap? Why or why not? How would you determine what documents to upload to verify your payments?</span></p>
+                <p>When my product manager went out for client meetings, I would accompany him to hear from our current and target users and get a better sense of their needs and pains. Through these meetings, we were able to identify bugs and usability issues that affected the current product experience, in addition to getting ideas of what new features could help our users grow their businesses.</p>
+                <div class="img-cap">
+                    <img src="/img/payment-platform/user-persona.png" alt="User persona">
+                    <figcaption>User persona of the target audience: a small business owner</figcaption>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ideation</h2>
+            <p>For the redesign of each new product page, I began by sketching out ideas for how to best arrange the information hierarchy, and referred to my market research to employ the best modern design practices. I would discuss my design decisions, thoughts, and questions with my product manager before moving onto wireframes and then high-fidelity mockups.</p>
+            <p>Through my user interviews, I heard concerns regarding data safety and security, particularly surrounding storing credit card information, such as whether or not credit cards should be automatically saved during the payment process. I discussed saving cards being an option with my product manager, but because this didn't align with our business goals (drive recurring use), we opted to keep things as is, and instead, adjusted the information hierarchy to make it clearer that cards were being added to the account.</p>
+            <div class="img-cap">
+                <img src="/img/payment-platform/reap-sketches.png" alt="Ideation sketching">
+                <figcaption>Sketching ideas for how to improve platform usability and information hierarchy</figcaption>
+            </div>
+        </section>
+
+        <section>
+            <h2>QA Testing</h2>
+            <p>Alongside my product and engineering teams, I conducted quality assurance tests in our dev environment to ensure our product met usability standards without errors or difficulties. Because our web platform was designed with a mobile-first approach, which has more restrictions, I made sure our mobile testing was very thorough, testing across different device sizes, operating systems, and browsers. </p>
             <div class="img-cap">
                 <img src="/img/payment-platform/mobile-testing.png" alt="Mobile testing">
                 <figcaption>Documenting problems found during QA testing for mobile payment process</figcaption>
@@ -65,22 +130,18 @@
 
         <section>
             <h2>The Final Designs</h2>
-
-            <div class="subsection">
-                <h3 class="subheader">Improving branding and accessibility</h3>
-                <p>In redesigning the Reap platform, my goals included creating a brand guideline/design system, improving usability, meeting accessibility standards, and creating a responsive site. I researched Reap’s competitors and other business within the industry to learn what our users were expecting from us, and conducted qualitative research to find what pains and frustrations our users were experiencing.</p>
-                <div class="img-cap">
-                    <img src="/img/payment-platform/responsive-screens.png" alt="Responsive screens and other mockups">
-                    <figcaption>Designed screens for mobile and web responsiveness</figcaption>
-                </div>
+            <p>The redesigned Reap platform enhances the company's brand perception through <span class="bold">improved usability and consistent designs</span>, and is made more accessible through <span class="bold">a more responsive and user-friendly site</span>. I took into consideration elements such as color contrast, minimum target touch size, and each page's information hierarchy to create a modern site to boost Reap's credibility.</p>
+            <div class="img-cap">
+                <img src="/img/payment-platform/responsive-screens.png" alt="Responsive screens and other mockups">
+                <figcaption>Redesigned screens for mobile and web responsiveness</figcaption>
             </div>
 
             <div class="subsection">
-                <h3>Building trust through communication</h3>
-                <p>Based on our analytical data, the majority of users who signed up for a Reap account would not go through the process of making a payment (collecting payments was in development at the time). From this, we inferred that our users wanted to know how Reap worked, stopping just before entering their personal financial information. This lead to the development of the Reap Guide, a comprehensive onboarding guide that details how Reap can be used, and explains the security measures we take to keep user information safe.</p>
+                <h3>Creating a more informative experience</h3>
+                <p>While it's not expected that every new user has an immediate payment to make, the majority of these users dropped-off just before entering their personal financial information. From this, we inferred that our users wanted to gain first-hand knowledge of how Reap worked, and whether it was a right fit for their business. This lead to the development of the <span class="bold">Reap Guide, a comprehensive onboarding guide that details how Reap can be used, and explains the security measures in place to keep user information safe</span>. Unlike the previous 4-step onboarding, the Reap Guide takes users through each step of the payment process, collect process, etc., and can be reviewed again anytime by new and returning users .</p>
                 <div class="img-cap img-gif middle">
                     <img src="/img/payment-platform/reap-guide.gif" alt="Reap Guide information GIF">
-                    <figcaption>Reap Guide onboarding materials to inform new users of Reap's offerings</figcaption>
+                    <figcaption>Reap Guide: onboarding materials to inform new users of Reap's offerings</figcaption>
                 </div>
                 <div class="img-cap img-gif">
                     <div class="gifs-3col">
@@ -94,17 +155,32 @@
 
             <div class="subsection">
                 <h3>Adopting best practices of form design</h3>
-                <p>To better organize the multi-screen payment form, I utilized best practices including simplifying with conditional fields (different fields are required for different beneficiaries types), in-line validation, field focus (while scrolling, i.e. keyboard doesn’t cover input field), and logically grouped fields.</p>
+                <p>To help users quickly navigate the multi-page payment form, I employed best practices including: <span class="bold">conditional logic fields</span> to only show the relevant fields for beneficiary types, <span class="bold">in-line validation</span> to speed up error correction, <span class="bold">field focus</span> on mobile to prevent the keyboard from covering input fields, <span class="bold">adding visual components</span> to highlight important inputs, and <span class="bold">improved information hierarchy</span>.</p>
+                <p>We also used this redesign to address our users concerns, such as: including helper text to indicate what types of documents to upload with their payment, and allowing users to clear their default card selection to give them the control of selecting which card to pay with each time.</p>
                 <div class="img-cap">
                     <img src="/img/payment-platform/reap-pay-and-collect.png" alt="Reap Pay and Reap Collect mockups">
-                    <figcaption>Redesigned the payment forms with modern design practices</figcaption>
+                    <figcaption>Redesigned the payment forms with best design practices</figcaption>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>My Takeaways</h2>
-            <p>I think the form fields design was done relatively well at the time, but now that I reflect on it, there are still details that could have been added on different pages to remove memory burdens, and provide important information earlier. It was my first time building a design system, so it was a bit simpler as I was learning how to build a proper one, but there was a lot more I could have done, and I didn’t get a chance to build it up as we were building out more product offerings. In addition to the design system, I also would want to update the UI to create better hierarchy by adding more depth and elevation to the designs.</p>
+            <h2>Design Components</h2>
+            <p>I worked closely with my product manager to develop a component library inline with the new Reap brand guidelines. This helped create consistency in our designs, improve accessibility, and reduce development time in the redesign of the entire platform. Aligning to these new guidelines also helped our strengthen our brand recognition in our marketing initiatives in advertisements and at conferences.</p>
+            <div class="img-cap">
+                <img src="/img/payment-platform/design-components.png" alt="Design system components">
+                <figcaption>Created design system components to bring consistency to Reap's brand</figcaption>
+            </div>
+        </section>
+
+        <section>
+            <h2>Impact</h2>
+            <p>In my short time at Reap, I delivered hundreds of mockups through the redesign of every page of the platform, in addition to strategizing and implementing new pages like the Reap Guide, and integrating the collect side of Reap into the main product, making it available to all end users. The redesign was well received by our core user base, like our early adopters, who were happy with the improved usability and modern design, and the ability to pay and collect revenue through one single platform.</p>
+        </section>
+
+        <section>
+            <h2>Reflection</h2>
+            <p>Through my first experience working with managers and engineers, I learned a lot about the product and development lifecycle. Being able to iterate and flesh out design ideas gave me the opportunity to grow and learn from my mistakes. I learned to lean more on researching design resources and best practices to be able to work not just faster, but smarter, and push out better work. Reflecting on my work, I think there were better design thinking questions I could have asked, and more details I could have added to provide context earlier upfront for a smoother user experience. Near the end of my time with Reap, I began to grasp the amount of work it takes to build a proper design system, which pushed me to start learning more about design systems to improve my knowledge for my future design work.</p>
         </section>
 
         <footer>
